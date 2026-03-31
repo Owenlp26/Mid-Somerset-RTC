@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The latest news from Midsomerset RTC — trials, match reports, training updates, and club announcements." />
+  <title>Academy News — Midsomerset RTC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">Midsomerset <span>RTC</span></a>
+
+        <ul class="navbar__nav" role="list">
+          <li><a href="index.html"   class="navbar__link">Home</a></li>
+          <li><a href="about.html"   class="navbar__link">About</a></li>
+          <li><a href="teams.html"   class="navbar__link">Teams</a></li>
+          <li><a href="news.html"    class="navbar__link">News</a></li>
+          <li><a href="contact.html" class="navbar__link">Register</a></li>
+        </ul>
+
+        <div class="navbar__cta">
+          <a href="contact.html" class="btn-primary btn-sm">Join the Academy</a>
+        </div>
+
+        <button
+          class="navbar__hamburger"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="navbar__mobile-menu" role="menu">
+      <a href="index.html"   class="navbar__link" role="menuitem">Home</a>
+      <a href="about.html"   class="navbar__link" role="menuitem">About</a>
+      <a href="teams.html"   class="navbar__link" role="menuitem">Teams</a>
+      <a href="news.html"    class="navbar__link" role="menuitem">News</a>
+      <a href="contact.html" class="navbar__link" role="menuitem">Register</a>
+      <a href="contact.html" class="btn-primary">Join the Academy</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero" aria-label="Academy News">
+      <div class="page-hero__bg"></div>
+      <div class="container">
+        <div class="page-hero__content">
+          <span class="page-hero__label">Latest Updates</span>
+          <h1 class="page-hero__title">Academy News</h1>
+          <p class="page-hero__subtitle">
+            Stay up to date with everything happening at Midsomerset RTC — trials, results,
+            training news, and more.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NEWS GRID ===================== -->
+    <section class="section" id="news">
+      <div class="container">
+
+        <div class="news-grid">
+
+          <!-- Article 1 -->
+          <article class="news-card">
+            <div class="news-card__image news-card__image--variant-1" role="img" aria-label="Spring trials announcement"></div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__tag">Trials</span>
+                <time class="news-card__date" datetime="2026-02-14">14 February 2026</time>
+              </div>
+              <h2 class="news-card__title">Spring Trials Now Open — U12s &amp; U14s</h2>
+              <p class="news-card__excerpt">
+                We are delighted to announce that spring trials for our U12s and U14s squads are
+                now officially open. Spaces are strictly limited, so early registration is strongly
+                encouraged to avoid disappointment.
+              </p>
+              <a href="#" class="news-card__link">Read More</a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="news-card">
+            <div class="news-card__image news-card__image--variant-2" role="img" aria-label="U10s match victory"></div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__tag">Match Report</span>
+                <time class="news-card__date" datetime="2026-01-10">10 January 2026</time>
+              </div>
+              <h2 class="news-card__title">U10s Claim Victory in Somerset Development League</h2>
+              <p class="news-card__excerpt">
+                A brilliant collective performance saw our U10s side secure a well-deserved
+                victory in the Somerset Development League, showcasing exactly the combination
+                play and pressing that the coaching staff have been working hard on in training.
+              </p>
+              <a href="#" class="news-card__link">Read More</a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="news-card">
+            <div class="news-card__image news-card__image--variant-3" role="img" aria-label="New U8s training sessions"></div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__tag">Training</span>
+                <time class="news-card__date" datetime="2026-01-28">28 January 2026</time>
+              </div>
+              <h2 class="news-card__title">New Training Sessions Added for U8s</h2>
+              <p class="news-card__excerpt">
+                Following fantastic demand from families across Somerset, we have introduced an
+                additional Tuesday evening training slot for our U8s age group, giving young
+                players even more quality time on the ball each week.
+              </p>
+              <a href="#" class="news-card__link">Read More</a>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="news-card">
+            <div class="news-card__image news-card__image--variant-4" role="img" aria-label="New academy coach joins"></div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__tag">Club News</span>
+                <time class="news-card__date" datetime="2026-01-05">5 January 2026</time>
+              </div>
+              <h2 class="news-card__title">Coaching Team Welcomes New Academy Coach</h2>
+              <p class="news-card__excerpt">
+                Midsomerset RTC is thrilled to welcome a new addition to our coaching staff ahead
+                of the spring term. The new appointment brings a wealth of experience from the
+                professional game and will be working primarily with our U12–U14 age groups.
+              </p>
+              <a href="#" class="news-card__link">Read More</a>
+            </div>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="news-card">
+            <div class="news-card__image news-card__image--variant-5" role="img" aria-label="End of season awards night"></div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__tag">Club News</span>
+                <time class="news-card__date" datetime="2026-03-12">12 March 2026</time>
+              </div>
+              <h2 class="news-card__title">End of Season Awards Night Announced</h2>
+              <p class="news-card__excerpt">
+                We are excited to announce details of this season's end of season awards evening,
+                which will celebrate the achievements, effort, and progress of players across all
+                age groups. All players and families are warmly invited to attend.
+              </p>
+              <a href="#" class="news-card__link">Read More</a>
+            </div>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="news-card">
+            <div class="news-card__image news-card__image--variant-6" role="img" aria-label="U16s county cup semi-final"></div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__tag">Match Report</span>
+                <time class="news-card__date" datetime="2026-02-28">28 February 2026</time>
+              </div>
+              <h2 class="news-card__title">U16s Progress to County Cup Semi-Final</h2>
+              <p class="news-card__excerpt">
+                A composed and disciplined display saw our U16s earn their place in the Somerset
+                County Cup semi-final — the furthest the age group has progressed in the
+                competition since the club was founded. The squad and staff are rightly proud.
+              </p>
+              <a href="#" class="news-card__link">Read More</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA STRIP ===================== -->
+    <section class="cta-strip" aria-label="Join the Academy">
+      <div class="container">
+        <div class="cta-strip__content">
+          <span class="section-label" style="color: #93c5fd;">Get Involved</span>
+          <h2 class="cta-strip__title">Want to Be Part of the Story?</h2>
+          <p class="cta-strip__text">
+            Register your interest today and join the Midsomerset RTC family. We would love to
+            have you on the pitch with us.
+          </p>
+          <div class="cta-strip__buttons">
+            <a href="contact.html" class="btn-primary">Register Your Interest</a>
+            <a href="teams.html"   class="btn-outline">View Our Teams</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">Midsomerset <span>RTC</span></div>
+          <div class="footer__tagline">Building Players. Building Character.</div>
+          <p class="footer__desc">
+            An FA-registered Regional Talent Club developing young footballers aged
+            8–16 across Somerset.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer__nav-title">Quick Links</div>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="index.html"   class="footer__nav-link">Home</a></li>
+            <li><a href="about.html"   class="footer__nav-link">About</a></li>
+            <li><a href="teams.html"   class="footer__nav-link">Teams</a></li>
+            <li><a href="news.html"    class="footer__nav-link">News</a></li>
+            <li><a href="contact.html" class="footer__nav-link">Register</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__nav-title">Contact</div>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="mailto:info@midsomersetrtc.co.uk" class="footer__nav-link">info@midsomersetrtc.co.uk</a></li>
+            <li><span class="footer__nav-link" style="cursor: default;">Somerset, UK</span></li>
+            <li><span class="footer__nav-link" style="cursor: default;">Training: Tue &amp; Thu evenings</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Midsomerset RTC. All rights reserved.</p>
+        <span class="footer__badge">&#9917; FA Registered Regional Talent Club</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

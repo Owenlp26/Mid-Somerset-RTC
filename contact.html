@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Register your interest or get in touch with Midsomerset RTC. We welcome players aged 8–16 across Somerset." />
+  <title>Join the Academy — Midsomerset RTC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">Midsomerset <span>RTC</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html" class="nav-register active">Register</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="teams.html">Teams</a>
+    <a href="news.html">News</a>
+    <a href="contact.html" class="active">Register</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="section-label" style="color: var(--blue-light);">Get Involved</p>
+      <h1>Join the Academy</h1>
+      <p>Take the first step towards developing your game. Fill in the form below and we'll be in touch to tell you about upcoming trials and training sessions.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <div>
+          <p class="section-label">Register Your Interest</p>
+          <h2 class="section-title">Get in Touch</h2>
+          <p style="color:#64748B; margin-bottom:2rem;">Complete the form below and a member of our coaching team will be in touch shortly.</p>
+
+          <form id="registerForm">
+            <div class="form-group">
+              <label for="fullName">Player's Full Name *</label>
+              <input type="text" id="fullName" name="fullName" placeholder="e.g. James Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth *</label>
+              <input type="date" id="dob" name="dob" required />
+            </div>
+            <div class="form-group">
+              <label for="parentName">Parent / Guardian Name *</label>
+              <input type="text" id="parentName" name="parentName" placeholder="e.g. Sarah Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="e.g. sarah@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="e.g. 07700 900000" required />
+            </div>
+            <div class="form-group">
+              <label for="ageGroup">Age Group Interested In *</label>
+              <select id="ageGroup" name="ageGroup" required>
+                <option value="" disabled selected>Select an age group</option>
+                <option value="u8">U8s</option>
+                <option value="u9">U9s</option>
+                <option value="u10">U10s</option>
+                <option value="u11">U11s</option>
+                <option value="u12">U12s</option>
+                <option value="u13">U13s</option>
+                <option value="u14">U14s</option>
+                <option value="u15">U15s</option>
+                <option value="u16">U16s</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Any Questions or Additional Information</label>
+              <textarea id="message" name="message" placeholder="Tell us anything else you'd like us to know..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Enquiry</button>
+            <div class="form-success" id="formSuccess">
+              Thanks for getting in touch! We'll be in contact with you shortly.
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <p class="section-label">Contact Information</p>
+          <h2 class="section-title">Find Us</h2>
+          <p style="color:#64748B; margin-bottom:2rem;">We're based in Somerset and welcome players from across the region.</p>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Somerset, UK</p>
+              <p style="color:#64748B; font-size:0.85rem; margin-top:0.25rem;">Exact venue provided on registration</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">⚽</div>
+            <div>
+              <h4>Training Nights</h4>
+              <p>Tuesday &amp; Thursday Evenings</p>
+              <p style="color:#64748B; font-size:0.85rem; margin-top:0.25rem;">Times vary by age group</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>info@midsomersetrtc.co.uk</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>To be confirmed</p>
+            </div>
+          </div>
+
+          <div style="background:var(--navy-dark); border-radius:var(--radius); padding:1.75rem; margin-top:1.5rem;">
+            <h3 style="color:var(--white); font-size:1rem; font-weight:700; margin-bottom:0.5rem;">What happens next?</h3>
+            <p style="color:rgba(255,255,255,0.65); font-size:0.88rem; line-height:1.7;">Once we receive your enquiry, a member of our coaching team will contact you within 48 hours to discuss upcoming trials and how your child can get involved with the academy.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Midsomerset RTC</h3>
+        <p>An FA-registered Regional Talent Club developing young footballers aged 8–16 across Somerset.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="teams.html">Teams</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Register</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:info@midsomersetrtc.co.uk">info@midsomersetrtc.co.uk</a>
+        <a href="#">Somerset, UK</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Midsomerset RTC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
