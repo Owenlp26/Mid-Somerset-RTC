@@ -1479,3 +1479,463 @@ main {
   white-space: nowrap;
   border: 0;
 }
+
+/* ============================================================
+   PREMIUM VISUAL UPGRADES — Mid-Somerset JPL Talent Centre
+   ============================================================ */
+
+/* ── Gold accent variable ── */
+:root {
+  --color-gold:      #F59E0B;
+  --color-gold-light: #FDE68A;
+}
+
+/* ── Gradient text utility ── */
+.gradient-text {
+  background: linear-gradient(135deg, #0B2447 0%, #2563EB 55%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* ── Outline / stroke decorative text ── */
+.outline-text {
+  -webkit-text-stroke: 2px rgba(37,99,235,0.18);
+  color: transparent;
+  font-size: clamp(5rem, 14vw, 12rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── Diagonal stripe pattern on light sections ── */
+.section--striped {
+  background-color: var(--color-grey-light);
+  background-image: repeating-linear-gradient(
+    -55deg,
+    transparent,
+    transparent 30px,
+    rgba(37,99,235,0.04) 30px,
+    rgba(37,99,235,0.04) 32px
+  );
+}
+
+/* ── Section clip-path dividers ── */
+.section--clip-top {
+  clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
+  margin-top: -2px;
+  padding-top: calc(var(--space-20) + 3vw);
+}
+
+.section--clip-both {
+  clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+  margin-top: -2px;
+  padding-top: calc(var(--space-20) + 3vw);
+  padding-bottom: calc(var(--space-20) + 3vw);
+}
+
+/* ── Radial mesh / conic overlay for hero & dark sections ── */
+.hero__mesh {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(37,99,235,0.22) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 20%, rgba(96,165,250,0.14) 0%, transparent 45%),
+    conic-gradient(from 210deg at 50% 120%, rgba(37,99,235,0.08) 0deg, transparent 60deg);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Hero ticker / marquee ── */
+.hero__ticker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(37,99,235,0.85);
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.hero__ticker-track {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker-scroll 28s linear infinite;
+}
+
+.hero__ticker-track span {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  padding-inline: var(--space-8);
+}
+
+.hero__ticker-track span.sep {
+  color: var(--color-gold);
+  padding-inline: 0;
+}
+
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── Glassmorphism stat cards ── */
+.stats-glass-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+}
+
+.stat-glass {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-6);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.stat-glass:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+}
+
+.stat-glass__value {
+  font-size: var(--font-size-4xl);
+  font-weight: 800;
+  color: var(--color-white);
+  margin-bottom: var(--space-1);
+  letter-spacing: -0.02em;
+}
+
+.stat-glass__label {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: rgba(255,255,255,0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.stat-glass__icon {
+  font-size: 2.2rem;
+  margin-bottom: var(--space-4);
+  color: var(--color-gold);
+}
+
+/* ── Card shimmer/gloss effect ── */
+.card,
+.news-card,
+.team-card,
+.coach-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before,
+.news-card::before,
+.team-card::before,
+.coach-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255,255,255,0.18) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  transition: left 0.55s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.card:hover::before,
+.news-card:hover::before,
+.team-card:hover::before,
+.coach-card:hover::before {
+  left: 125%;
+}
+
+/* Gradient border on card hover */
+.card:hover,
+.team-card:hover {
+  border-color: transparent;
+  background-clip: padding-box;
+  box-shadow: 0 0 0 2px var(--color-blue), var(--shadow-lg);
+}
+
+/* ── Locations section ── */
+.locations-section {
+  background: linear-gradient(135deg, #0B2447 0%, #0f2f5e 60%, #0B2447 100%);
+  background-image:
+    radial-gradient(ellipse at 10% 50%, rgba(37,99,235,0.25) 0%, transparent 55%),
+    linear-gradient(135deg, #0B2447 0%, #0f2f5e 60%, #0B2447 100%);
+  padding-block: var(--space-20);
+  position: relative;
+  overflow: hidden;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+}
+
+.location-card {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-6);
+  text-align: center;
+  transition: transform var(--transition-normal), background var(--transition-normal), box-shadow var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.location-card:hover {
+  transform: translateY(-6px);
+  background: rgba(37,99,235,0.18);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.3);
+}
+
+.location-card__icon {
+  font-size: 2.5rem;
+  color: var(--color-gold);
+  margin-bottom: var(--space-4);
+}
+
+.location-card__venue {
+  font-size: var(--font-size-lg);
+  font-weight: 800;
+  color: var(--color-white);
+  margin-bottom: var(--space-1);
+}
+
+.location-card__town {
+  font-size: var(--font-size-sm);
+  color: rgba(255,255,255,0.65);
+  margin-bottom: var(--space-4);
+}
+
+.location-card__days {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  background: rgba(245,158,11,0.12);
+  border: 1px solid rgba(245,158,11,0.3);
+  border-radius: var(--radius-full);
+  padding: var(--space-1) var(--space-4);
+}
+
+/* ── Champions banner ── */
+.champions-banner {
+  position: relative;
+  background: #060f1f;
+  padding-block: var(--space-20);
+  text-align: center;
+  overflow: hidden;
+}
+
+.champions-banner__bg-mesh {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(245,158,11,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 30%, rgba(37,99,235,0.1) 0%, transparent 55%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.champions-banner__bg-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.champions-banner__bg-text span {
+  -webkit-text-stroke: 2px rgba(245,158,11,0.10);
+  color: transparent;
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.champions-banner__content {
+  position: relative;
+  z-index: 1;
+}
+
+.champions-banner__trophy {
+  font-size: 4rem;
+  margin-bottom: var(--space-4);
+  display: block;
+  filter: drop-shadow(0 4px 16px rgba(245,158,11,0.5));
+}
+
+.champions-banner__year {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  background: rgba(245,158,11,0.12);
+  border: 1px solid rgba(245,158,11,0.4);
+  border-radius: var(--radius-full);
+  padding: var(--space-2) var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.champions-banner__title {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 800;
+  color: var(--color-gold);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: var(--space-4);
+  text-shadow: 0 0 40px rgba(245,158,11,0.4);
+}
+
+.champions-banner__subtitle {
+  font-size: var(--font-size-lg);
+  color: rgba(255,255,255,0.7);
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+/* ── Glowing pulse CTA buttons ── */
+@keyframes btn-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(37,99,235,0.6); }
+  70%  { box-shadow: 0 0 0 14px rgba(37,99,235,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,99,235,0); }
+}
+
+.btn-primary.btn-pulse {
+  animation: btn-pulse 2s ease-out infinite;
+}
+
+/* ── Easter camp promo banner ── */
+.camp-banner {
+  background: linear-gradient(135deg, #0B2447, #1d4ed8);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.camp-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -55deg,
+    transparent,
+    transparent 28px,
+    rgba(255,255,255,0.03) 28px,
+    rgba(255,255,255,0.03) 30px
+  );
+}
+
+.camp-banner__label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  background: rgba(245,158,11,0.12);
+  border: 1px solid rgba(245,158,11,0.35);
+  border-radius: var(--radius-full);
+  padding: var(--space-1) var(--space-4);
+  position: relative;
+  z-index: 1;
+}
+
+.camp-banner__title {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+}
+
+.camp-banner__details {
+  font-size: var(--font-size-sm);
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+.camp-banner__price {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.camp-banner__price-item {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+/* ── Responsive updates for new elements ── */
+@media (min-width: 768px) {
+  .stats-glass-row { grid-template-columns: repeat(2, 1fr); }
+  .locations-grid  { grid-template-columns: repeat(3, 1fr); }
+  .camp-banner { flex-direction: row; align-items: center; justify-content: space-between; }
+}
+
+@media (min-width: 1200px) {
+  .stats-glass-row { grid-template-columns: repeat(4, 1fr); }
+}

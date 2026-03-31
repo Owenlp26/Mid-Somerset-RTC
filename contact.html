@@ -3,177 +3,325 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Register your interest or get in touch with Midsomerset RTC. We welcome players aged 8–16 across Somerset." />
-  <title>Join the Academy — Midsomerset RTC</title>
+  <meta name="description" content="Register your interest or get in touch with Mid-Somerset JPL Talent Centre. Boys U7–U13, Girls U8–U15. Also book our Easter Camp 13–15 April 2026." />
+  <title>Join the Academy — Mid-Somerset JPL Talent Centre</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo">Midsomerset <span>RTC</span></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="teams.html">Teams</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html" class="nav-register active">Register</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+  <!-- ===================== NAVBAR ===================== -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">Midsomerset <span>RTC</span></a>
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="teams.html">Teams</a>
-    <a href="news.html">News</a>
-    <a href="contact.html" class="active">Register</a>
-  </div>
+        <ul class="navbar__nav" role="list">
+          <li><a href="index.html"   class="navbar__link">Home</a></li>
+          <li><a href="about.html"   class="navbar__link">About</a></li>
+          <li><a href="teams.html"   class="navbar__link">Teams</a></li>
+          <li><a href="news.html"    class="navbar__link">News</a></li>
+          <li><a href="contact.html" class="navbar__link">Register</a></li>
+        </ul>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <div class="page-hero-content">
-      <p class="section-label" style="color: var(--blue-light);">Get Involved</p>
-      <h1>Join the Academy</h1>
-      <p>Take the first step towards developing your game. Fill in the form below and we'll be in touch to tell you about upcoming trials and training sessions.</p>
+        <div class="navbar__cta">
+          <a href="contact.html" class="btn-primary btn-sm btn-pulse">Join the Academy</a>
+        </div>
+
+        <button
+          class="navbar__hamburger"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="navbar__mobile-menu" role="menu">
+      <a href="index.html"   class="navbar__link" role="menuitem">Home</a>
+      <a href="about.html"   class="navbar__link" role="menuitem">About</a>
+      <a href="teams.html"   class="navbar__link" role="menuitem">Teams</a>
+      <a href="news.html"    class="navbar__link" role="menuitem">News</a>
+      <a href="contact.html" class="navbar__link" role="menuitem">Register</a>
+      <a href="contact.html" class="btn-primary">Join the Academy</a>
     </div>
-  </section>
+  </header>
 
-  <!-- Contact Section -->
-  <section>
+  <main>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero" aria-label="Join the Academy">
+      <div class="page-hero__bg"></div>
+      <div class="hero__mesh" style="opacity:0.6;"></div>
+      <div class="container">
+        <div class="page-hero__content">
+          <span class="page-hero__label">Get Involved</span>
+          <h1 class="page-hero__title">Join the Academy</h1>
+          <p class="page-hero__subtitle">
+            Register your interest for the Boys (U7–U13) or Girls (U8–U15) programme, or
+            book a place at our Easter Camp 13–15 April 2026.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EASTER CAMP PROMO ===================== -->
+    <section class="section" style="padding-bottom: var(--space-4);">
+      <div class="container">
+        <div class="camp-banner">
+          <div style="position:relative; z-index:1; flex:1;">
+            <div class="camp-banner__label"><i class="fa-solid fa-sun"></i>&nbsp; Easter Camp 2026</div>
+            <div class="camp-banner__title" style="margin-top:var(--space-4);">Easter Football Camp</div>
+            <div class="camp-banner__details" style="margin-top:var(--space-3);">
+              <strong style="color:#fff;">13–15 April 2026</strong> &nbsp;·&nbsp; Strode College Sports Centre, Street<br>
+              Years 2–7 &nbsp;·&nbsp; 9am–3pm each day<br>
+              Mention "Easter Camp" in your enquiry below
+            </div>
+            <div class="camp-banner__price" style="margin-top:var(--space-4);">
+              <div class="camp-banner__price-item">£25 / day</div>
+              <div class="camp-banner__price-item" style="background:rgba(245,158,11,0.15); border-color:rgba(245,158,11,0.4); color:#F59E0B;">£65 all 3 days</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="section section--striped" id="register" style="clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0% 100%); margin-top:-2px; padding-top: calc(var(--space-20) + 2vw);">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Form -->
+          <div class="form-card">
+            <span class="section-label">Register Your Interest</span>
+            <h2 class="form-title gradient-text">Get in Touch</h2>
+            <p class="form-subtitle">Complete the form and a member of our coaching team will be in touch within 48 hours.</p>
+
+            <form id="registration-form" novalidate>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="playerName">Player's Full Name <span>*</span></label>
+                  <input class="form-input" type="text" id="playerName" name="playerName" placeholder="e.g. James Smith" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="dob">Date of Birth <span>*</span></label>
+                  <input class="form-input" type="date" id="dob" name="dob" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="parentName">Parent / Guardian Name <span>*</span></label>
+                  <input class="form-input" type="text" id="parentName" name="parentName" placeholder="e.g. Sarah Smith" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address <span>*</span></label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder="e.g. sarah@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone Number <span>*</span></label>
+                  <input class="form-input" type="tel" id="phone" name="phone" placeholder="e.g. 07700 900000" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="programme">Programme <span>*</span></label>
+                  <select class="form-select" id="programme" name="programme" required>
+                    <option value="" disabled selected>Select a programme</option>
+                    <option value="boys">Boys Programme (U7–U13)</option>
+                    <option value="girls">Girls Centre of Excellence (U8–U15)</option>
+                    <option value="easter-camp">Easter Camp (13–15 Apr 2026)</option>
+                    <option value="goalkeeper">Goalkeeper Training</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="ageGroup">Age Group <span>*</span></label>
+                <select class="form-select" id="ageGroup" name="ageGroup" required>
+                  <option value="" disabled selected>Select an age group</option>
+                  <optgroup label="Boys">
+                    <option value="u7-boys">U7s (Boys)</option>
+                    <option value="u8-boys">U8s (Boys)</option>
+                    <option value="u9-boys">U9s (Boys)</option>
+                    <option value="u10-boys">U10s (Boys)</option>
+                    <option value="u11-boys">U11s (Boys)</option>
+                    <option value="u12-boys">U12s (Boys)</option>
+                    <option value="u13-boys">U13s (Boys)</option>
+                  </optgroup>
+                  <optgroup label="Girls">
+                    <option value="u8-girls">U8s (Girls)</option>
+                    <option value="u9-girls">U9s (Girls)</option>
+                    <option value="u10-girls">U10s (Girls)</option>
+                    <option value="u11-girls">U11s (Girls)</option>
+                    <option value="u12-girls">U12s (Girls)</option>
+                    <option value="u13-girls">U13s (Girls)</option>
+                    <option value="u14-girls">U14s (Girls)</option>
+                    <option value="u15-girls">U15s (Girls)</option>
+                  </optgroup>
+                  <option value="easter-camp">Easter Camp (Years 2–7)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="venue">Preferred Venue</label>
+                <select class="form-select" id="venue" name="venue">
+                  <option value="" disabled selected>Select a preferred venue</option>
+                  <option value="strode">Strode College Sports Centre — Street</option>
+                  <option value="writhlington">Writhlington Sports Centre — Radstock</option>
+                  <option value="st-marks">St Mark's School — Bath</option>
+                  <option value="any">Any / No Preference</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Any Questions or Additional Information</label>
+                <textarea class="form-textarea" id="message" name="message" placeholder="Tell us anything else you'd like us to know..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary form-submit btn-pulse">Send Enquiry</button>
+
+              <div class="form-success" id="form-success">
+                <i class="fa-solid fa-circle-check" style="margin-right:8px;"></i>
+                Thanks for getting in touch! A member of our coaching team will contact you within 48 hours.
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2 class="contact-info__title gradient-text">Contact &amp; Venues</h2>
+
+            <div class="info-box">
+              <div class="info-box__icon" aria-hidden="true"><i class="fa-solid fa-envelope" style="color:#fff;"></i></div>
+              <div>
+                <div class="info-box__label">Email</div>
+                <div class="info-box__value">
+                  <a href="mailto:midsomersetrtc@junior-premier.co.uk" style="color:inherit; text-decoration:none;">
+                    midsomersetrtc@junior-premier.co.uk
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <div class="info-box__icon" aria-hidden="true"><i class="fa-brands fa-instagram" style="color:#fff;"></i></div>
+              <div>
+                <div class="info-box__label">Instagram</div>
+                <div class="info-box__value">
+                  <a href="https://instagram.com/midsomersetrtc" target="_blank" rel="noopener" style="color:inherit; text-decoration:none;">
+                    @midsomersetrtc
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <div class="info-box__icon" aria-hidden="true"><i class="fa-solid fa-location-dot" style="color:#fff;"></i></div>
+              <div>
+                <div class="info-box__label">Venue 1</div>
+                <div class="info-box__value">Strode College Sports Centre</div>
+                <div class="info-box__sub">Street, Somerset — Mon &amp; Fri evenings</div>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <div class="info-box__icon" aria-hidden="true"><i class="fa-solid fa-location-dot" style="color:#fff;"></i></div>
+              <div>
+                <div class="info-box__label">Venue 2</div>
+                <div class="info-box__value">Writhlington Sports Centre</div>
+                <div class="info-box__sub">Radstock, Somerset — weekday evenings</div>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <div class="info-box__icon" aria-hidden="true"><i class="fa-solid fa-location-dot" style="color:#fff;"></i></div>
+              <div>
+                <div class="info-box__label">Venue 3</div>
+                <div class="info-box__value">St Mark's School</div>
+                <div class="info-box__sub">Bath, Somerset — weekday evenings</div>
+              </div>
+            </div>
+
+            <!-- What happens next box -->
+            <div style="background:var(--color-navy-deep); border-radius:var(--radius-lg); padding:var(--space-6); border:1px solid rgba(255,255,255,0.08);">
+              <div style="display:flex; align-items:center; gap:var(--space-3); margin-bottom:var(--space-3);">
+                <div style="width:36px; height:36px; border-radius:var(--radius-md); background:linear-gradient(135deg,var(--color-navy-mid),var(--color-blue)); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                  <i class="fa-solid fa-circle-question" style="color:#fff; font-size:1rem;"></i>
+                </div>
+                <h3 style="color:var(--color-white); font-size:var(--font-size-base); font-weight:700;">What happens next?</h3>
+              </div>
+              <p style="color:rgba(255,255,255,0.65); font-size:var(--font-size-sm); line-height:1.7;">
+                Once we receive your enquiry, a member of our coaching team will contact you within
+                48 hours to discuss upcoming trials, training sessions, and how your child can
+                get involved with Somerset's No.1 JPL Academy.
+              </p>
+              <div style="margin-top:var(--space-4); padding-top:var(--space-4); border-top:1px solid rgba(255,255,255,0.08);">
+                <div style="display:flex; align-items:center; gap:var(--space-2); font-size:var(--font-size-xs); color:rgba(255,255,255,0.45); font-weight:600; letter-spacing:0.08em; text-transform:uppercase;">
+                  <i class="fa-solid fa-trophy" style="color:#F59E0B;"></i>
+                  JPL National Champions 2018
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
     <div class="container">
-      <div class="contact-grid">
-
-        <!-- Form -->
-        <div>
-          <p class="section-label">Register Your Interest</p>
-          <h2 class="section-title">Get in Touch</h2>
-          <p style="color:#64748B; margin-bottom:2rem;">Complete the form below and a member of our coaching team will be in touch shortly.</p>
-
-          <form id="registerForm">
-            <div class="form-group">
-              <label for="fullName">Player's Full Name *</label>
-              <input type="text" id="fullName" name="fullName" placeholder="e.g. James Smith" required />
-            </div>
-            <div class="form-group">
-              <label for="dob">Date of Birth *</label>
-              <input type="date" id="dob" name="dob" required />
-            </div>
-            <div class="form-group">
-              <label for="parentName">Parent / Guardian Name *</label>
-              <input type="text" id="parentName" name="parentName" placeholder="e.g. Sarah Smith" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" placeholder="e.g. sarah@example.com" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number *</label>
-              <input type="tel" id="phone" name="phone" placeholder="e.g. 07700 900000" required />
-            </div>
-            <div class="form-group">
-              <label for="ageGroup">Age Group Interested In *</label>
-              <select id="ageGroup" name="ageGroup" required>
-                <option value="" disabled selected>Select an age group</option>
-                <option value="u8">U8s</option>
-                <option value="u9">U9s</option>
-                <option value="u10">U10s</option>
-                <option value="u11">U11s</option>
-                <option value="u12">U12s</option>
-                <option value="u13">U13s</option>
-                <option value="u14">U14s</option>
-                <option value="u15">U15s</option>
-                <option value="u16">U16s</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Any Questions or Additional Information</label>
-              <textarea id="message" name="message" placeholder="Tell us anything else you'd like us to know..."></textarea>
-            </div>
-            <button type="submit" class="form-submit">Send Enquiry</button>
-            <div class="form-success" id="formSuccess">
-              Thanks for getting in touch! We'll be in contact with you shortly.
-            </div>
-          </form>
-        </div>
-
-        <!-- Contact Info -->
-        <div>
-          <p class="section-label">Contact Information</p>
-          <h2 class="section-title">Find Us</h2>
-          <p style="color:#64748B; margin-bottom:2rem;">We're based in Somerset and welcome players from across the region.</p>
-
-          <div class="contact-info-card">
-            <div class="contact-info-icon">📍</div>
-            <div>
-              <h4>Location</h4>
-              <p>Somerset, UK</p>
-              <p style="color:#64748B; font-size:0.85rem; margin-top:0.25rem;">Exact venue provided on registration</p>
-            </div>
-          </div>
-
-          <div class="contact-info-card">
-            <div class="contact-info-icon">⚽</div>
-            <div>
-              <h4>Training Nights</h4>
-              <p>Tuesday &amp; Thursday Evenings</p>
-              <p style="color:#64748B; font-size:0.85rem; margin-top:0.25rem;">Times vary by age group</p>
-            </div>
-          </div>
-
-          <div class="contact-info-card">
-            <div class="contact-info-icon">✉️</div>
-            <div>
-              <h4>Email</h4>
-              <p>info@midsomersetrtc.co.uk</p>
-            </div>
-          </div>
-
-          <div class="contact-info-card">
-            <div class="contact-info-icon">📞</div>
-            <div>
-              <h4>Phone</h4>
-              <p>To be confirmed</p>
-            </div>
-          </div>
-
-          <div style="background:var(--navy-dark); border-radius:var(--radius); padding:1.75rem; margin-top:1.5rem;">
-            <h3 style="color:var(--white); font-size:1rem; font-weight:700; margin-bottom:0.5rem;">What happens next?</h3>
-            <p style="color:rgba(255,255,255,0.65); font-size:0.88rem; line-height:1.7;">Once we receive your enquiry, a member of our coaching team will contact you within 48 hours to discuss upcoming trials and how your child can get involved with the academy.</p>
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">Midsomerset <span>RTC</span></div>
+          <div class="footer__tagline">Somerset's No.1 JPL Football Academy</div>
+          <p class="footer__desc">
+            Mid-Somerset JPL Talent Centre — part of the Junior Premier League pathway.
+            Boys U7–U13 &amp; Girls U8–U15 across Bath, Radstock, and Street.
+          </p>
+          <div style="margin-top:var(--space-5);">
+            <a href="https://instagram.com/midsomersetrtc" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:var(--space-2); color:rgba(255,255,255,0.6); font-size:var(--font-size-sm); text-decoration:none;" aria-label="Follow @midsomersetrtc on Instagram">
+              <i class="fa-brands fa-instagram" style="font-size:1.2rem;"></i>
+              @midsomersetrtc
+            </a>
           </div>
         </div>
 
-      </div>
-    </div>
-  </section>
+        <div>
+          <div class="footer__nav-title">Quick Links</div>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="index.html"   class="footer__nav-link">Home</a></li>
+            <li><a href="about.html"   class="footer__nav-link">About</a></li>
+            <li><a href="teams.html"   class="footer__nav-link">Teams</a></li>
+            <li><a href="news.html"    class="footer__nav-link">News</a></li>
+            <li><a href="contact.html" class="footer__nav-link">Register</a></li>
+          </ul>
+        </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <h3>Midsomerset RTC</h3>
-        <p>An FA-registered Regional Talent Club developing young footballers aged 8–16 across Somerset.</p>
+        <div>
+          <div class="footer__nav-title">Contact</div>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="mailto:midsomersetrtc@junior-premier.co.uk" class="footer__nav-link">midsomersetrtc@junior-premier.co.uk</a></li>
+            <li><span class="footer__nav-link" style="cursor: default;">Somerset, UK</span></li>
+            <li><span class="footer__nav-link" style="cursor: default;">Bath · Radstock · Street</span></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Pages</h4>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="teams.html">Teams</a>
-        <a href="news.html">News</a>
-        <a href="contact.html">Register</a>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Mid-Somerset JPL Talent Centre. All rights reserved.</p>
+        <span class="footer__badge"><i class="fa-solid fa-trophy" style="color:#F59E0B;"></i> JPL National Champions 2018</span>
       </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <a href="mailto:info@midsomersetrtc.co.uk">info@midsomersetrtc.co.uk</a>
-        <a href="#">Somerset, UK</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Midsomerset RTC. All rights reserved.</p>
     </div>
   </footer>
 

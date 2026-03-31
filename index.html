@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Midsomerset RTC is an FA-registered Regional Talent Club developing young footballers aged 8–16 across Somerset. Building Players. Building Character." />
-  <title>Midsomerset RTC — Building Players. Building Character.</title>
+  <meta name="description" content="Mid-Somerset JPL Talent Centre — Somerset's No.1 JPL Football Academy. Boys U7–U13 and Girls U8–U15 (Girls Centre of Excellence). JPL National Champions 2018." />
+  <title>Mid-Somerset JPL Talent Centre — Somerset's No.1 JPL Football Academy</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -25,7 +25,7 @@
         </ul>
 
         <div class="navbar__cta">
-          <a href="contact.html" class="btn-primary btn-sm">Join the Academy</a>
+          <a href="contact.html" class="btn-primary btn-sm btn-pulse">Join the Academy</a>
         </div>
 
         <button
@@ -55,76 +55,147 @@
   <main>
 
     <!-- ===================== HERO ===================== -->
-    <section class="hero" aria-label="Hero">
+    <section class="hero" aria-label="Hero" style="padding-bottom: 44px;">
       <div class="hero__bg"></div>
+      <div class="hero__mesh"></div>
       <div class="hero__glow"></div>
       <div class="hero__glow hero__glow--2"></div>
 
       <div class="container">
         <div class="hero__content">
-          <div class="hero__badge"><i class="fa-solid fa-shield-halved"></i> FA Registered Regional Talent Club</div>
+          <div class="hero__badge">
+            <i class="fa-solid fa-trophy" style="color:#F59E0B;"></i>
+            &nbsp;JPL National Champions 2018 &nbsp;·&nbsp; Junior Premier League Pathway
+          </div>
 
           <h1 class="hero__title">
-            Midsomerset
-            <span>RTC</span>
+            <span class="gradient-text" style="-webkit-text-fill-color:unset; background:-webkit-linear-gradient(135deg,#bfdbfe 0%,#ffffff 55%,#93c5fd 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; display:block; font-size:inherit;">Mid-Somerset</span>
+            <span style="color:#F59E0B; display:block; font-size:0.65em; letter-spacing:0.02em; -webkit-text-fill-color:#F59E0B;">JPL Talent Centre</span>
           </h1>
 
-          <p class="hero__tagline">Building Players. Building Character.</p>
+          <p class="hero__tagline">Somerset's No.1 JPL Football Academy</p>
 
           <div class="hero__ctas">
-            <a href="contact.html" class="btn-primary">Join the Academy</a>
+            <a href="contact.html" class="btn-primary btn-pulse">Join the Academy</a>
             <a href="about.html"   class="btn-outline">Learn More</a>
           </div>
+        </div>
+      </div>
+
+      <!-- Scrolling ticker -->
+      <div class="hero__ticker" aria-hidden="true">
+        <div class="hero__ticker-track">
+          <span>JPL National Champions 2018</span><span class="sep">·</span>
+          <span>Somerset's No.1 Academy</span><span class="sep">·</span>
+          <span>Boys &amp; Girls</span><span class="sep">·</span>
+          <span>Ages U7–U15</span><span class="sep">·</span>
+          <span>Bath</span><span class="sep">·</span>
+          <span>Radstock</span><span class="sep">·</span>
+          <span>Street</span><span class="sep">·</span>
+          <span>Goalkeeper Training Available</span><span class="sep">·</span>
+          <span>Junior Premier League Pathway</span><span class="sep">·</span>
+          <!-- duplicate for seamless loop -->
+          <span>JPL National Champions 2018</span><span class="sep">·</span>
+          <span>Somerset's No.1 Academy</span><span class="sep">·</span>
+          <span>Boys &amp; Girls</span><span class="sep">·</span>
+          <span>Ages U7–U15</span><span class="sep">·</span>
+          <span>Bath</span><span class="sep">·</span>
+          <span>Radstock</span><span class="sep">·</span>
+          <span>Street</span><span class="sep">·</span>
+          <span>Goalkeeper Training Available</span><span class="sep">·</span>
+          <span>Junior Premier League Pathway</span><span class="sep">·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS (glassmorphism) ===================== -->
+    <section class="section section--dark" style="padding-block: var(--space-16);" aria-label="Key stats">
+      <div class="container">
+        <div class="stats-glass-row">
+
+          <div class="stat-glass">
+            <div class="stat-glass__icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="stat-glass__value" data-count-to="3">3</div>
+            <div class="stat-glass__label">Training Venues</div>
+          </div>
+
+          <div class="stat-glass">
+            <div class="stat-glass__icon"><i class="fa-solid fa-futbol"></i></div>
+            <div class="stat-glass__value">U7–U15</div>
+            <div class="stat-glass__label">Age Groups</div>
+          </div>
+
+          <div class="stat-glass">
+            <div class="stat-glass__icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="stat-glass__value" data-count-to="2018">2018</div>
+            <div class="stat-glass__label">JPL National Champions</div>
+          </div>
+
+          <div class="stat-glass">
+            <div class="stat-glass__icon"><i class="fa-solid fa-people-group"></i></div>
+            <div class="stat-glass__value">Boys &amp; Girls</div>
+            <div class="stat-glass__label">Girls Centre of Excellence</div>
+          </div>
+
         </div>
       </div>
     </section>
 
     <!-- ===================== ABOUT THE ACADEMY ===================== -->
-    <section class="section" id="about">
-      <div class="container">
+    <section class="section section--striped" id="about" style="position:relative; overflow:hidden;">
+      <!-- Decorative background text -->
+      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; pointer-events:none; overflow:hidden; z-index:0;" aria-hidden="true">
+        <span class="outline-text" style="-webkit-text-stroke:2px rgba(37,99,235,0.07);">ELITE</span>
+      </div>
+
+      <div class="container" style="position:relative; z-index:1;">
         <div class="text-center">
           <span class="section-label">Who We Are</span>
-          <h2 class="section-title">About the Academy</h2>
+          <h2 class="section-title gradient-text">About the Academy</h2>
         </div>
 
         <div style="max-width: 760px; margin-inline: auto; margin-bottom: var(--space-6);">
           <p class="intro-text">
-            Midsomerset RTC is an FA-registered Regional Talent Club based in Somerset, dedicated to
-            identifying and developing talented young footballers aged 8 to 16. As part of the
-            national RTC network, we provide a structured, high-quality pathway that bridges grassroots
-            football and elite academy environments.
+            Mid-Somerset JPL Talent Centre is Somerset's premier Junior Premier League Football Academy,
+            dedicated to identifying and developing talented young footballers aged U7 to U15 across
+            Somerset. As part of the official JPL pathway, we provide a structured, high-quality
+            programme that bridges grassroots football and elite academy environments.
           </p>
           <p class="intro-text" style="margin-top: var(--space-4);">
             Our programme combines technical coaching, physical development, and character education —
             giving every player the tools they need to fulfil their potential both on and off the pitch.
-            Whether your child is taking their first steps in the game or pushing for a professional
-            pathway, Midsomerset RTC is the place to grow.
+            We are proud to offer dedicated provision for both Boys (U7–U13) and Girls (U8–U15) through
+            our Girls Centre of Excellence, alongside specialist goalkeeper training at all three venues.
           </p>
         </div>
+      </div>
+    </section>
 
-        <div class="stats-row">
-          <div class="stat-box">
-            <div class="stat-box__value">Ages 8–16</div>
-            <div class="stat-box__label">All Age Groups Catered For</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-box__value">FA Registered</div>
-            <div class="stat-box__label">Official Regional Talent Club</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-box__value">Player Development</div>
-            <div class="stat-box__label">Individual Pathways &amp; Plans</div>
-          </div>
+    <!-- ===================== CHAMPIONS BANNER ===================== -->
+    <section class="champions-banner" aria-label="JPL National Champions 2018">
+      <div class="champions-banner__bg-mesh"></div>
+      <div class="champions-banner__bg-text" aria-hidden="true">
+        <span>NATIONAL CHAMPIONS</span>
+      </div>
+      <div class="container">
+        <div class="champions-banner__content">
+          <span class="champions-banner__trophy" aria-hidden="true">🏆</span>
+          <div class="champions-banner__year">JPL National Champions · 2018</div>
+          <h2 class="champions-banner__title">National Champions</h2>
+          <p class="champions-banner__subtitle">
+            We are proud to be JPL National Champions, the highest honour in the Junior Premier League,
+            a testament to the talent and dedication of our players and coaching staff.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- ===================== OUR PROGRAMME ===================== -->
-    <section class="section section--grey" id="programme">
+    <section class="section" id="programme" style="clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%); padding-top: calc(var(--space-20) + 3vw); margin-top: -2px;">
       <div class="container">
         <div class="text-center">
           <span class="section-label">What We Do</span>
-          <h2 class="section-title">Our Programme</h2>
+          <h2 class="section-title gradient-text">Our Programme</h2>
           <p class="section-subtitle">
             A three-pillar approach that develops complete footballers, ready for the next level.
           </p>
@@ -136,7 +207,7 @@
             <h3 class="card__title">Technical Development</h3>
             <p class="card__text">
               Structured sessions focused on ball mastery, technical skill-building, and position-specific
-              training. Our FA-qualified coaches design age-appropriate curricula that challenge every
+              training. Our JPL-qualified coaches design age-appropriate curricula that challenge every
               player to improve week on week.
             </p>
           </div>
@@ -153,81 +224,144 @@
 
           <div class="card">
             <div class="card__icon" aria-hidden="true"><i class="fa-solid fa-trophy"></i></div>
-            <h3 class="card__title">Pathways to Progress</h3>
+            <h3 class="card__title">JPL Pathway</h3>
             <p class="card__text">
-              Clear development pathways link our youngest players through to senior football.
-              We run trials, liaise with professional academies, and provide every player with
-              transparent feedback on their progression.
+              Clear development pathways within the Junior Premier League. We run trials, support
+              progression through the JPL structure, and provide every player with transparent
+              feedback on their development.
             </p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ===================== LOCATIONS ===================== -->
+    <section class="locations-section" id="locations" aria-label="Training Venues" style="clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%); margin-top: -2px; padding-top: calc(var(--space-20) + 3vw); padding-bottom: calc(var(--space-20) + 3vw);">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label" style="color:#93c5fd;">Where We Train</span>
+          <h2 class="section-title" style="color:#fff;">Training Venues</h2>
+          <p class="section-subtitle" style="color:rgba(255,255,255,0.65);">
+            Three convenient venues across Somerset — Bath, Radstock, and Street.
+          </p>
+        </div>
+
+        <div class="locations-grid">
+
+          <div class="location-card">
+            <div class="location-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="location-card__venue">Strode College Sports Centre</div>
+            <div class="location-card__town">Street, Somerset</div>
+            <div class="location-card__days"><i class="fa-regular fa-calendar"></i> Mon &amp; Fri Evenings</div>
+          </div>
+
+          <div class="location-card">
+            <div class="location-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="location-card__venue">Writhlington Sports Centre</div>
+            <div class="location-card__town">Radstock, Somerset</div>
+            <div class="location-card__days"><i class="fa-regular fa-calendar"></i> Weekday Evenings</div>
+          </div>
+
+          <div class="location-card">
+            <div class="location-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="location-card__venue">St Mark's School</div>
+            <div class="location-card__town">Bath, Somerset</div>
+            <div class="location-card__days"><i class="fa-regular fa-calendar"></i> Weekday Evenings</div>
+          </div>
+
+        </div>
+
+        <p style="text-align:center; color:rgba(255,255,255,0.5); font-size:var(--font-size-sm); margin-top:var(--space-8);">
+          <i class="fa-solid fa-futbol" style="color:#F59E0B; margin-right:6px;"></i>
+          Goalkeeper training available at all venues
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== EASTER CAMP ===================== -->
+    <section class="section" id="camp" style="padding-top: calc(var(--space-20) + 3vw); margin-top: -2px;">
+      <div class="container">
+        <div class="camp-banner">
+          <div style="position:relative; z-index:1; flex:1;">
+            <div class="camp-banner__label"><i class="fa-solid fa-sun"></i>&nbsp; Easter Camp 2026</div>
+            <div class="camp-banner__title" style="margin-top:var(--space-4);">Easter Football Camp</div>
+            <div class="camp-banner__details" style="margin-top:var(--space-3);">
+              <strong style="color:#fff;">13–15 April 2026</strong> &nbsp;·&nbsp; Strode College Sports Centre, Street<br>
+              Years 2–7 &nbsp;·&nbsp; 9am–3pm each day
+            </div>
+            <div class="camp-banner__price" style="margin-top:var(--space-4);">
+              <div class="camp-banner__price-item">£25 / day</div>
+              <div class="camp-banner__price-item" style="background:rgba(245,158,11,0.15); border-color:rgba(245,158,11,0.4); color:#F59E0B;">£65 all 3 days</div>
+            </div>
+          </div>
+          <div style="position:relative; z-index:1; flex-shrink:0; text-align:center;">
+            <a href="contact.html" class="btn-primary btn-pulse" style="margin-top:var(--space-4);">Book Your Place</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===================== LATEST NEWS ===================== -->
-    <section class="section" id="news">
+    <section class="section section--striped" id="news">
       <div class="container">
         <div style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); margin-bottom: var(--space-12);">
           <div>
             <span class="section-label">Stay Up to Date</span>
-            <h2 class="section-title" style="margin-bottom: 0;">Latest from the Academy</h2>
+            <h2 class="section-title gradient-text" style="margin-bottom: 0;">Latest from the Academy</h2>
           </div>
           <a href="news.html" class="btn-outline--dark btn-outline btn-sm">View All News</a>
         </div>
 
-        <div class="news-grid" style="grid-template-columns: 1fr;">
-          <!-- News preview cards — 3 items on home page -->
-          <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-8);" class="home-news-grid">
+        <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-8);" class="home-news-grid">
 
-            <article class="news-card">
-              <div class="news-card__image news-card__image--variant-1" aria-hidden="true"></div>
-              <div class="news-card__body">
-                <div class="news-card__meta">
-                  <span class="news-card__tag">Trials</span>
-                  <time class="news-card__date" datetime="2026-02-14">14 February 2026</time>
-                </div>
-                <h3 class="news-card__title">Spring Trials Now Open — U12s &amp; U14s</h3>
-                <p class="news-card__excerpt">
-                  We are excited to announce that spring trials for our U12s and U14s squads are now open.
-                  Places are limited, so register your interest as soon as possible to secure your spot.
-                </p>
-                <a href="news.html" class="news-card__link">Read More</a>
+          <article class="news-card">
+            <div class="news-card__image news-card__image--variant-1" aria-hidden="true"></div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__tag">Easter Camp</span>
+                <time class="news-card__date" datetime="2026-03-20">20 March 2026</time>
               </div>
-            </article>
+              <h3 class="news-card__title">Easter Camp Announced — 13–15 April @ Strode College</h3>
+              <p class="news-card__excerpt">
+                We are excited to announce our Easter Football Camp running 13–15 April 2026 at Strode
+                College Sports Centre, Street. Open to Years 2–7, 9am–3pm daily. Book your place now.
+              </p>
+              <a href="news.html" class="news-card__link">Read More</a>
+            </div>
+          </article>
 
-            <article class="news-card">
-              <div class="news-card__image news-card__image--variant-3" aria-hidden="true"></div>
-              <div class="news-card__body">
-                <div class="news-card__meta">
-                  <span class="news-card__tag">Training</span>
-                  <time class="news-card__date" datetime="2026-01-28">28 January 2026</time>
-                </div>
-                <h3 class="news-card__title">New Training Sessions Added for U8s</h3>
-                <p class="news-card__excerpt">
-                  Following high demand, we have added an additional Tuesday evening session for our
-                  U8s age group, giving young players even more time on the ball.
-                </p>
-                <a href="news.html" class="news-card__link">Read More</a>
+          <article class="news-card">
+            <div class="news-card__image news-card__image--variant-3" aria-hidden="true"></div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__tag">Girls Academy</span>
+                <time class="news-card__date" datetime="2026-02-14">14 February 2026</time>
               </div>
-            </article>
+              <h3 class="news-card__title">Girls Centre of Excellence — Trials Open for U8–U15</h3>
+              <p class="news-card__excerpt">
+                Our Girls Centre of Excellence is now open for trials across all age groups U8 to U15.
+                We are committed to providing the highest quality JPL pathway for female players in Somerset.
+              </p>
+              <a href="news.html" class="news-card__link">Read More</a>
+            </div>
+          </article>
 
-            <article class="news-card">
-              <div class="news-card__image news-card__image--variant-5" aria-hidden="true"></div>
-              <div class="news-card__body">
-                <div class="news-card__meta">
-                  <span class="news-card__tag">Match Report</span>
-                  <time class="news-card__date" datetime="2026-01-10">10 January 2026</time>
-                </div>
-                <h3 class="news-card__title">U10s Claim Victory in Somerset Development League</h3>
-                <p class="news-card__excerpt">
-                  A brilliant team performance saw our U10s side secure a well-deserved win in
-                  the Somerset Development League, showcasing exactly the skills worked on in training.
-                </p>
-                <a href="news.html" class="news-card__link">Read More</a>
+          <article class="news-card">
+            <div class="news-card__image news-card__image--variant-5" aria-hidden="true"></div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__tag">Goalkeeper Training</span>
+                <time class="news-card__date" datetime="2026-01-28">28 January 2026</time>
               </div>
-            </article>
+              <h3 class="news-card__title">Specialist Goalkeeper Training Now at All 3 Venues</h3>
+              <p class="news-card__excerpt">
+                We are pleased to confirm that dedicated goalkeeper training is now available at all
+                three training venues — Strode College, Writhlington, and St Mark's School.
+              </p>
+              <a href="news.html" class="news-card__link">Read More</a>
+            </div>
+          </article>
 
-          </div>
         </div>
       </div>
     </section>
@@ -237,13 +371,13 @@
       <div class="container">
         <div class="cta-strip__content">
           <span class="section-label" style="color: #93c5fd;">Get Started</span>
-          <h2 class="cta-strip__title">Ready to Join?</h2>
+          <h2 class="cta-strip__title">Ready to Join Somerset's No.1 JPL Academy?</h2>
           <p class="cta-strip__text">
             Take the first step in your football journey. Register your interest today and
-            find out how Midsomerset RTC can help your child reach their potential.
+            find out how Mid-Somerset JPL Talent Centre can help your child reach their potential.
           </p>
           <div class="cta-strip__buttons">
-            <a href="contact.html" class="btn-primary">Register Your Interest</a>
+            <a href="contact.html" class="btn-primary btn-pulse">Register Your Interest</a>
             <a href="about.html"   class="btn-outline">Find Out More</a>
           </div>
         </div>
@@ -258,11 +392,17 @@
       <div class="footer__top">
         <div class="footer__brand">
           <div class="footer__logo">Midsomerset <span>RTC</span></div>
-          <div class="footer__tagline">Building Players. Building Character.</div>
+          <div class="footer__tagline">Somerset's No.1 JPL Football Academy</div>
           <p class="footer__desc">
-            An FA-registered Regional Talent Club developing young footballers aged
-            8–16 across Somerset.
+            Mid-Somerset JPL Talent Centre — part of the Junior Premier League pathway.
+            Boys U7–U13 &amp; Girls U8–U15 across Bath, Radstock, and Street.
           </p>
+          <div style="margin-top:var(--space-5);">
+            <a href="https://instagram.com/midsomersetrtc" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:var(--space-2); color:rgba(255,255,255,0.6); font-size:var(--font-size-sm); text-decoration:none; transition:color 0.2s ease;" aria-label="Follow @midsomersetrtc on Instagram">
+              <i class="fa-brands fa-instagram" style="font-size:1.2rem;"></i>
+              @midsomersetrtc
+            </a>
+          </div>
         </div>
 
         <div>
@@ -279,16 +419,16 @@
         <div>
           <div class="footer__nav-title">Contact</div>
           <ul class="footer__nav-links" role="list">
-            <li><a href="mailto:info@midsomersetrtc.co.uk" class="footer__nav-link">info@midsomersetrtc.co.uk</a></li>
+            <li><a href="mailto:midsomersetrtc@junior-premier.co.uk" class="footer__nav-link">midsomersetrtc@junior-premier.co.uk</a></li>
             <li><span class="footer__nav-link" style="cursor: default;">Somerset, UK</span></li>
-            <li><span class="footer__nav-link" style="cursor: default;">Training: Tue &amp; Thu evenings</span></li>
+            <li><span class="footer__nav-link" style="cursor: default;">Bath · Radstock · Street</span></li>
           </ul>
         </div>
       </div>
 
       <div class="footer__bottom">
-        <p class="footer__copy">&copy; 2025 Midsomerset RTC. All rights reserved.</p>
-        <span class="footer__badge"><i class="fa-solid fa-shield-halved"></i> FA Registered Regional Talent Club</span>
+        <p class="footer__copy">&copy; 2026 Mid-Somerset JPL Talent Centre. All rights reserved.</p>
+        <span class="footer__badge"><i class="fa-solid fa-trophy" style="color:#F59E0B;"></i> JPL National Champions 2018</span>
       </div>
     </div>
   </footer>

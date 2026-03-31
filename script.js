@@ -166,7 +166,7 @@
   /* ── Intersection Observer — subtle card reveal ─────────── */
   if ('IntersectionObserver' in window) {
     const revealTargets = document.querySelectorAll(
-      '.card, .news-card, .team-card, .coach-card, .stat-box, .info-box, .offer-item'
+      '.card, .news-card, .team-card, .coach-card, .stat-box, .info-box, .offer-item, .location-card, .stat-glass'
     );
 
     const revealObserver = new IntersectionObserver(
@@ -187,6 +187,63 @@
       el.style.transform  = 'translateY(20px)';
       el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
       revealObserver.observe(el);
+    });
+  }
+
+  /* ── Animated counters (IntersectionObserver) ────────────── */
+  if ('IntersectionObserver' in window) {
+
+    /**
+     * Easing function — ease out quad
+     */
+    function easeOutQuad(t) {
+      return t * (2 - t);
+    }
+
+    /**
+     * Animate a single counter element.
+     * @param {Element} el  — element with data-count-to (number) and optional data-count-suffix
+     * @param {number} duration — ms
+     */
+    function animateCounter(el, duration) {
+      var target  = parseFloat(el.getAttribute('data-count-to')) || 0;
+      var suffix  = el.getAttribute('data-count-suffix') || '';
+      var prefix  = el.getAttribute('data-count-prefix') || '';
+      var isInt   = Number.isInteger(target);
+      var start   = performance.now();
+
+      function step(now) {
+        var elapsed  = now - start;
+        var progress = Math.min(elapsed / duration, 1);
+        var eased    = easeOutQuad(progress);
+        var current  = eased * target;
+        var display  = isInt ? Math.round(current) : current.toFixed(1);
+        el.textContent = prefix + display + suffix;
+
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = prefix + (isInt ? target : target.toFixed(1)) + suffix;
+        }
+      }
+
+      requestAnimationFrame(step);
+    }
+
+    var counterObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target, 1800);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    document.querySelectorAll('[data-count-to]').forEach(function (el) {
+      counterObserver.observe(el);
     });
   }
 })();
