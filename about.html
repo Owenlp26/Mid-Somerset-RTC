@@ -3,281 +3,255 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Mid-Somerset JPL Talent Centre — our story, mission, values, and the coaching staff behind Somerset's No.1 JPL Football Academy." />
-  <title>About — Mid-Somerset JPL Talent Centre</title>
+  <meta name="description" content="About Mid-Somerset RTC - meet our founder Paul Taylor and the coaching team behind Somerset's premier JPL Football Academy." />
+  <title>About Us - Mid-Somerset RTC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ===================== NAVBAR ===================== -->
+  <!-- NAVBAR -->
   <header>
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="navbar__inner">
-        <a href="index.html" class="navbar__logo">Midsomerset <span>RTC</span></a>
-
+        <a href="index.html" class="navbar__logo">
+          <img src="assets/JPL_MS_RTC_Mono_White.svg" alt="Mid-Somerset RTC" class="navbar__logo-img">
+        </a>
         <ul class="navbar__nav" role="list">
-          <li><a href="index.html"   class="navbar__link">Home</a></li>
-          <li><a href="about.html"   class="navbar__link">About</a></li>
-          <li><a href="teams.html"   class="navbar__link">Teams</a></li>
-          <li><a href="news.html"    class="navbar__link">News</a></li>
-          <li><a href="contact.html" class="navbar__link">Register</a></li>
+          <li><a href="index.html"     class="navbar__link">Home</a></li>
+          <li><a href="about.html"     class="navbar__link">About</a></li>
+          <li><a href="training.html"  class="navbar__link">Training</a></li>
+          <li><a href="successes.html" class="navbar__link">Successes</a></li>
+          <li><a href="girls.html"     class="navbar__link">Girls CoE</a></li>
+          <li><a href="parents.html"   class="navbar__link">Parents</a></li>
         </ul>
-
         <div class="navbar__cta">
-          <a href="contact.html" class="btn-primary btn-sm btn-pulse">Join the Academy</a>
+          <a href="trial.html" class="btn-primary btn-sm btn-pulse">Enquire for a Trial</a>
         </div>
-
-        <button
-          class="navbar__hamburger"
-          aria-label="Toggle mobile menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="navbar__hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
         </button>
       </div>
     </nav>
-
-    <div id="mobile-menu" class="navbar__mobile-menu" role="menu">
-      <a href="index.html"   class="navbar__link" role="menuitem">Home</a>
-      <a href="about.html"   class="navbar__link" role="menuitem">About</a>
-      <a href="teams.html"   class="navbar__link" role="menuitem">Teams</a>
-      <a href="news.html"    class="navbar__link" role="menuitem">News</a>
-      <a href="contact.html" class="navbar__link" role="menuitem">Register</a>
-      <a href="contact.html" class="btn-primary">Join the Academy</a>
+    <div id="mobile-menu" class="navbar__mobile-menu">
+      <a href="index.html"     class="navbar__link">Home</a>
+      <a href="about.html"     class="navbar__link">About</a>
+      <a href="training.html"  class="navbar__link">Training</a>
+      <a href="successes.html" class="navbar__link">Successes</a>
+      <a href="girls.html"     class="navbar__link">Girls CoE</a>
+      <a href="parents.html"   class="navbar__link">Parents</a>
+      <a href="trial.html" class="btn-primary">Enquire for a Trial</a>
     </div>
   </header>
 
   <main>
 
-    <!-- ===================== PAGE HERO ===================== -->
-    <section class="page-hero" aria-label="About the Academy">
-      <div class="page-hero__bg"></div>
-      <div class="hero__mesh" style="opacity:0.6;"></div>
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="About Us">
+      <div class="page-hero__bg" style="background: linear-gradient(135deg, rgba(29,38,63,0.88) 0%, rgba(29,38,63,0.72) 100%), url('assets/images/coaches-trophy.jpg') center 20%/cover no-repeat;"></div>
       <div class="container">
         <div class="page-hero__content">
           <span class="page-hero__label">Who We Are</span>
-          <h1 class="page-hero__title">About the Academy</h1>
-          <p class="page-hero__subtitle">
-            Our story, our values, and the people who make Mid-Somerset JPL Talent Centre the club it is today.
-          </p>
+          <h1 class="page-hero__title">About Mid-Somerset RTC</h1>
+          <p class="page-hero__subtitle">A football academy built on passion, purpose, and a genuine belief that every talented child deserves a chance.</p>
         </div>
       </div>
     </section>
 
-    <!-- ===================== OUR STORY ===================== -->
-    <section class="section" id="story">
+    <!-- MISSION -->
+    <section class="section section--striped">
       <div class="container">
-        <div class="story-layout">
-
-          <!-- Text column -->
+        <div class="section-two-col" style="display: grid; gap: var(--space-16); align-items: center;">
           <div>
-            <span class="section-label">Our Story</span>
-            <h2 class="section-title gradient-text">Built on a Passion for Player Development</h2>
-            <div class="prose">
-              <p>
-                Mid-Somerset JPL Talent Centre was established with a clear and simple purpose: to give
-                talented young footballers in Somerset the environment and pathway they deserve. As part
-                of the official <strong>Junior Premier League (JPL)</strong> pathway, we are connected to
-                a national network designed to develop players through structured, quality football.
-              </p>
-              <p>
-                We are proud to be <strong>JPL National Champions 2018</strong> — the highest honour in
-                the Junior Premier League — a milestone that reflects the talent of our players and the
-                dedication of our coaching staff. That winning culture runs through everything we do.
-              </p>
-              <p>
-                Rooted in the Somerset community, we run sessions across three venues: Strode College
-                Sports Centre in Street, Writhlington Sports Centre in Radstock, and St Mark's School
-                in Bath. We cater for Boys (U7–U13) and Girls (U8–U15) through our dedicated
-                Girls Centre of Excellence, with goalkeeper training available at all venues.
-              </p>
+            <span class="section-label">Our Mission</span>
+            <h2 class="section-title gradient-text">Developing Boys and Girls Into the Next Generation of Footballers</h2>
+            <p class="intro-text">
+              Mid-Somerset RTC exists to give young players across Somerset the environment they need to grow, as footballers and as people. We provide academy-level coaching, high-level competition, and genuine exposure to professional pathways, all while making sure every child still has a genuine love for the game.
+            </p>
+            <p class="intro-text" style="margin-top: var(--space-4);">
+              Through the Junior Premier League pathway, we bridge the gap between grassroots football and elite academy environments, giving talented boys and girls access to life changing opportunities. Every session is built on the same standards used by professional clubs, delivered by coaches who are genuinely invested in seeing every child succeed, both on the pitch and off it.
+            </p>
+            <div style="margin-top: var(--space-8); display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+              <div style="background: rgba(94,207,245,0.08); border: 1px solid rgba(94,207,245,0.2); border-radius: var(--radius-lg); padding: var(--space-5);">
+                <div style="font-size: var(--font-size-2xl); font-weight: 800; color: var(--color-blue);">2018</div>
+                <div style="font-size: var(--font-size-sm); color: var(--color-grey-text); margin-top: var(--space-1);">JPL National Champions</div>
+              </div>
+              <div style="background: rgba(94,207,245,0.08); border: 1px solid rgba(94,207,245,0.2); border-radius: var(--radius-lg); padding: var(--space-5);">
+                <div style="font-size: var(--font-size-2xl); font-weight: 800; color: var(--color-blue);">3</div>
+                <div style="font-size: var(--font-size-sm); color: var(--color-grey-text); margin-top: var(--space-1);">Training Venues</div>
+              </div>
+              <div style="background: rgba(94,207,245,0.08); border: 1px solid rgba(94,207,245,0.2); border-radius: var(--radius-lg); padding: var(--space-5);">
+                <div style="font-size: var(--font-size-2xl); font-weight: 800; color: var(--color-blue);">U7–U16</div>
+                <div style="font-size: var(--font-size-sm); color: var(--color-grey-text); margin-top: var(--space-1);">Boys &amp; Girls Age Groups</div>
+              </div>
+              <div style="background: rgba(94,207,245,0.08); border: 1px solid rgba(94,207,245,0.2); border-radius: var(--radius-lg); padding: var(--space-5);">
+                <div style="font-size: var(--font-size-2xl); font-weight: 800; color: var(--color-blue);">2026</div>
+                <div style="font-size: var(--font-size-sm); color: var(--color-grey-text); margin-top: var(--space-1);">Kempense Meren Cup Winners</div>
+              </div>
+            </div>
+          </div>
+          <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
+            <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+              <source src="assets/images/MS.mov" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="section" style="clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%); padding-top: calc(var(--space-20) + 3vw); margin-top: -2px;">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-16);">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title gradient-text">Where It All Began</h2>
+        </div>
+
+        <div class="section-two-col" style="display: grid; gap: var(--space-16); align-items: center;">
+          <div style="border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 3/4; box-shadow: var(--shadow-lg);">
+            <img src="assets/images/Paul 1.JPG" alt="Paul Taylor - Founder, Mid-Somerset RTC" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" loading="lazy">
+          </div>
+          <div>
+            <div style="display: inline-block; background: rgba(94,207,245,0.1); border: 1px solid rgba(94,207,245,0.25); border-radius: var(--radius-full); padding: var(--space-2) var(--space-5); font-size: var(--font-size-xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-blue); margin-bottom: var(--space-5);">Founder</div>
+            <h3 style="font-size: var(--font-size-3xl); font-weight: 800; color: var(--color-navy-deep); margin-bottom: var(--space-2);">Paul Taylor</h3>
+            <p style="font-size: var(--font-size-sm); color: var(--color-grey-text); margin-bottom: var(--space-6); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;">Founder &amp; Academy Director · JPL Allstars National Lead</p>
+            <p style="font-size: var(--font-size-lg); line-height: 1.75; color: var(--color-grey-text); margin-bottom: var(--space-4);">
+              Paul is the owner and founder of Mid-Somerset RTC, and football has been his life since he was five or six years old, kicking a ball around in the local parks. He was fortunate enough to play academy football as a youngster, and that early taste for the game set him on a path into coaching. Over a 25-year career in professional and academy football, he's worked for the Football Association, Bristol City, and other academies at senior and head coach level, learning from some of the best in the game.
+            </p>
+            <p style="line-height: 1.75; color: var(--color-grey-text); margin-bottom: var(--space-4);">
+              Eight years ago, Paul founded Mid-Somerset RTC because he could see there were genuinely talented footballers all across this part of the world who weren't getting the environment they deserved. He wanted to build that environment himself: one where the best young players could be challenged, developed, and made better. Alongside running the academy, he now serves as National Lead for the JPL All Stars programme across London and the Southwest.
+            </p>
+            <p style="line-height: 1.75; color: var(--color-grey-text);">
+              But what drives him hasn't changed since he was that kid in the park. It's seeing young people thrive, develop, and fall in love with the game the way he did. Fifty years on, he's still here, still coaching, and still loving every single minute of it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COACHING STAFF -->
+    <section class="section section--striped" style="margin-top: -2px;">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-16);">
+          <span class="section-label">The Team</span>
+          <h2 class="section-title gradient-text">Our Coaching Staff</h2>
+          <p class="section-subtitle">Experienced, qualified, and passionate about developing the next generation.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8);">
+
+          <!-- ZACH -->
+          <div style="background: var(--color-white); border: 1px solid var(--color-grey-mid); border-radius: var(--radius-xl); overflow: hidden;">
+            <div style="aspect-ratio: 4/3; overflow: hidden;">
+              <img src="assets/images/Zach.JPG" alt="Zach - Foundation Phase, Mid-Somerset RTC" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" loading="lazy">
+            </div>
+            <div style="padding: var(--space-8);">
+              <div style="display: inline-block; background: rgba(94,207,245,0.1); border: 1px solid rgba(94,207,245,0.25); border-radius: var(--radius-full); padding: var(--space-1) var(--space-4); font-size: var(--font-size-xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-blue); margin-bottom: var(--space-4);">Foundation Phase</div>
+              <h3 style="font-size: var(--font-size-xl); font-weight: 800; color: var(--color-navy-deep); margin-bottom: var(--space-1);">Zach</h3>
+              <p style="font-size: var(--font-size-xs); color: var(--color-grey-text); margin-bottom: var(--space-5); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;">Head of U7–U11 Foundation Phase · Assistant Head of Coaching</p>
+              <p style="line-height: 1.75; color: var(--color-grey-text);">Having come through the professional academy system himself before being released at 16, Zach understands both the opportunities and challenges that football can bring. That experience inspired him to give back, and he's now spent over 13 years coaching young players.</p>
+              <div class="bio-extra" id="zach-extra" style="display: none;">
+                <p style="line-height: 1.75; color: var(--color-grey-text); margin-top: var(--space-4);">He's passionate about helping every child reach their potential, whether supporting those with ambitions of progressing through the academy pathway or helping them build confidence, become active, and fall in love with the game. He's committed to creating an environment where players feel comfortable to learn, work hard, recognise their strengths, and achieve things they didn't think were possible.</p>
+                <p style="line-height: 1.75; color: var(--color-grey-text); margin-top: var(--space-4);">Mid-Somerset RTC is a fantastic place for players to develop, with high standards and a strong focus on supporting each player's journey. Zach is proud to be part of an environment that challenges players to be the best they can be, both on and off the pitch.</p>
+              </div>
+              <button onclick="var e=document.getElementById('zach-extra');var open=e.style.display==='block';e.style.display=open?'none':'block';this.textContent=open?'Read more':'Read less';" style="margin-top: var(--space-4); background: none; border: none; color: var(--color-blue); font-weight: 700; font-size: var(--font-size-sm); cursor: pointer; padding: 0; font-family: inherit;">Read more</button>
             </div>
           </div>
 
-          <!-- Image column -->
-          <div>
-            <div class="story-image"></div>
+          <!-- CHRIS -->
+          <div style="background: var(--color-white); border: 1px solid var(--color-grey-mid); border-radius: var(--radius-xl); overflow: hidden;">
+            <div style="aspect-ratio: 4/3; overflow: hidden;">
+              <img src="assets/images/Chris.JPG" alt="Chris - Safeguarding & Head of Girls Centre, Mid-Somerset RTC" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" loading="lazy">
+            </div>
+            <div style="padding: var(--space-8);">
+              <div style="display: inline-block; background: rgba(94,207,245,0.1); border: 1px solid rgba(94,207,245,0.25); border-radius: var(--radius-full); padding: var(--space-1) var(--space-4); font-size: var(--font-size-xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-blue); margin-bottom: var(--space-4);">Safeguarding & Girls</div>
+              <h3 style="font-size: var(--font-size-xl); font-weight: 800; color: var(--color-navy-deep); margin-bottom: var(--space-1);">Chris</h3>
+              <p style="font-size: var(--font-size-xs); color: var(--color-grey-text); margin-bottom: var(--space-5); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;">Safeguarding & Welfare Officer · Head of Girls Centre</p>
+              <p style="line-height: 1.75; color: var(--color-grey-text);">Chris plays a vital dual role at Mid-Somerset RTC. As club Safeguarding and Welfare Officer, he ensures every player is in a safe, supportive environment. As Head of the Girls Centre of Excellence, he leads the programme that gives girls across Somerset access to the same high standard of coaching and pathway as the boys.</p>
+            </div>
+          </div>
+
+          <!-- BEN -->
+          <div style="background: var(--color-white); border: 1px solid var(--color-grey-mid); border-radius: var(--radius-xl); overflow: hidden;">
+            <div style="aspect-ratio: 4/3; overflow: hidden;">
+              <img src="assets/images/Ben.JPG" alt="Ben - Transition Phase, Mid-Somerset RTC" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" loading="lazy">
+            </div>
+            <div style="padding: var(--space-8);">
+              <div style="display: inline-block; background: rgba(94,207,245,0.1); border: 1px solid rgba(94,207,245,0.25); border-radius: var(--radius-full); padding: var(--space-1) var(--space-4); font-size: var(--font-size-xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-blue); margin-bottom: var(--space-4);">Head of Football Camps</div>
+              <h3 style="font-size: var(--font-size-xl); font-weight: 800; color: var(--color-navy-deep); margin-bottom: var(--space-1);">Ben Jeans</h3>
+              <p style="font-size: var(--font-size-xs); color: var(--color-grey-text); margin-bottom: var(--space-5); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;">Head of Football Camps · U12 White Coach · UEFA B Licence</p>
+              <p style="line-height: 1.75; color: var(--color-grey-text);">Ben is a UEFA B Licensed coach with a degree in Sports Coaching and Science, and has been part of Mid-Somerset RTC for over five years. He currently leads football camps and coaches the U12 Whites, having worked across all age groups from 5v5 through to 11v11.</p>
+              <div class="bio-extra" id="ben-extra" style="display: none;">
+                <p style="line-height: 1.75; color: var(--color-grey-text); margin-top: var(--space-4);">Alongside his work at the club, Ben is part of the JPL All Stars coaching team for the South West. He's spent four summers leading football camps across 25 states in America, been involved in over eight European football tours, and helped lead the Under 8s to back-to-back appearances at the National Championships at St George's Park.</p>
+                <p style="line-height: 1.75; color: var(--color-grey-text); margin-top: var(--space-4);">His coaching style is energetic, enthusiastic and positive - setting high standards while creating an environment where players are challenged to improve and always feel supported. He loves seeing players develop through the pathway, build confidence, and create memories that last a lifetime.</p>
+              </div>
+              <button onclick="var e=document.getElementById('ben-extra');var open=e.style.display==='block';e.style.display=open?'none':'block';this.textContent=open?'Read more':'Read less';" style="margin-top: var(--space-4); background: none; border: none; color: var(--color-blue); font-weight: 700; font-size: var(--font-size-sm); cursor: pointer; padding: 0; font-family: inherit;">Read more</button>
+            </div>
+          </div>
+
+          <!-- TODD -->
+          <div style="background: var(--color-white); border: 1px solid var(--color-grey-mid); border-radius: var(--radius-xl); overflow: hidden;">
+            <div style="aspect-ratio: 4/3; overflow: hidden;">
+              <img src="assets/images/tod-smiling.jpg" alt="Todd - Head Coach, Mid-Somerset RTC" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" loading="lazy">
+            </div>
+            <div style="padding: var(--space-8);">
+              <div style="display: inline-block; background: rgba(94,207,245,0.1); border: 1px solid rgba(94,207,245,0.25); border-radius: var(--radius-full); padding: var(--space-1) var(--space-4); font-size: var(--font-size-xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-blue); margin-bottom: var(--space-4);">Head Coach</div>
+              <h3 style="font-size: var(--font-size-xl); font-weight: 800; color: var(--color-navy-deep); margin-bottom: var(--space-1);">Todd</h3>
+              <p style="font-size: var(--font-size-xs); color: var(--color-grey-text); margin-bottom: var(--space-5); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;">U14–U16 Phase Lead · Head Coach of U16s</p>
+              <p style="line-height: 1.75; color: var(--color-grey-text);">Todd has been coaching football for 11 years, with the last four spent at Mid-Somerset RTC. His background is primarily in school PE, and his approach is built around being supportive and positive while creating teams that understand the importance of working together.</p>
+              <div class="bio-extra" id="todd-extra" style="display: none;">
+                <p style="line-height: 1.75; color: var(--color-grey-text); margin-top: var(--space-4);">He strongly believes that football is a "we game, not a me game" - success comes from players supporting each other, building strong relationships, and putting the team first.</p>
+                <p style="line-height: 1.75; color: var(--color-grey-text); margin-top: var(--space-4);">What makes Mid-Somerset special, in Todd's words, is the people - the sense of community, togetherness, and shared ambition throughout the club, on and off the pitch. He's proud of achievements including winning multiple tour tournaments and recently finishing with the joint 3rd best defensive record in the country. Most importantly, he loves seeing players become better teammates, enjoy their football, and develop into confident, committed individuals.</p>
+              </div>
+              <button onclick="var e=document.getElementById('todd-extra');var open=e.style.display==='block';e.style.display=open?'none':'block';this.textContent=open?'Read more':'Read less';" style="margin-top: var(--space-4); background: none; border: none; color: var(--color-blue); font-weight: 700; font-size: var(--font-size-sm); cursor: pointer; padding: 0; font-family: inherit;">Read more</button>
+            </div>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- ===================== CHAMPIONS BANNER ===================== -->
-    <section class="champions-banner" aria-label="JPL National Champions 2018">
-      <div class="champions-banner__bg-mesh"></div>
-      <div class="champions-banner__bg-text" aria-hidden="true">
-        <span>CHAMPIONS</span>
-      </div>
+    <!-- VALUES -->
+    <section class="locations-section" style="clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%); margin-top: -2px; padding-top: calc(var(--space-20) + 3vw); padding-bottom: calc(var(--space-20) + 3vw);">
       <div class="container">
-        <div class="champions-banner__content">
-          <span class="champions-banner__trophy" aria-hidden="true">🏆</span>
-          <div class="champions-banner__year">JPL National Champions · 2018</div>
-          <h2 class="champions-banner__title">National Champions</h2>
-          <p class="champions-banner__subtitle">
-            The pinnacle of the Junior Premier League — a historic achievement that continues to inspire
-            every player who walks through our doors.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== OUR MISSION ===================== -->
-    <section class="section section--striped" id="mission" style="clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%); margin-top:-2px; padding-top: calc(var(--space-20) + 3vw);">
-      <div class="container">
-        <div class="text-center">
-          <span class="section-label">What Drives Us</span>
-          <h2 class="section-title gradient-text">Our Mission</h2>
-          <p class="section-subtitle">
-            Three core commitments that underpin everything we do at Mid-Somerset JPL Talent Centre.
-          </p>
+        <div class="text-center" style="margin-bottom: var(--space-16);">
+          <span class="section-label" style="color: var(--color-blue-label);">Our Ethos</span>
+          <h2 class="section-title" style="color: #fff;">What We Stand For</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.65);">Everything we do comes back to three principles.</p>
         </div>
 
         <div class="grid-3">
-
-          <div class="card">
-            <div class="card__icon" aria-hidden="true"><i class="fa-solid fa-bullseye"></i></div>
-            <h3 class="card__title">Develop Talent</h3>
-            <p class="card__text">
-              We provide a high-quality, structured coaching environment that challenges players to
-              improve their technical skills, tactical understanding, and physical conditioning
-              through the JPL development framework.
-            </p>
+          <div style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-xl); padding: var(--space-10); text-align: center;">
+            <div style="font-size: 2.5rem; margin-bottom: var(--space-5);"><i class="fa-solid fa-heart" style="color: var(--color-teal);"></i></div>
+            <h3 style="font-size: var(--font-size-xl); font-weight: 800; color: #fff; margin-bottom: var(--space-4);">Welcome &amp; Informed</h3>
+            <p style="color: rgba(255,255,255,0.65); line-height: 1.7;">Every parent and player should feel completely at ease from first contact. We're open, honest, and always happy to answer questions, with no pressure, just clear information whenever you need it.</p>
           </div>
-
-          <div class="card">
-            <div class="card__icon" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
-            <h3 class="card__title">Build Character</h3>
-            <p class="card__text">
-              We believe football is a vehicle for life lessons. We instil values of respect,
-              resilience, discipline, and teamwork — qualities that serve players both on the
-              pitch and in all areas of life.
-            </p>
+          <div style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-xl); padding: var(--space-10); text-align: center;">
+            <div style="font-size: 2.5rem; margin-bottom: var(--space-5);"><i class="fa-solid fa-seedling" style="color: var(--color-teal);"></i></div>
+            <h3 style="font-size: var(--font-size-xl); font-weight: 800; color: #fff; margin-bottom: var(--space-4);">Development First</h3>
+            <p style="color: rgba(255,255,255,0.65); line-height: 1.7;">Results matter, but development matters more. We measure success by how much each player grows, technically, physically, and as a person, because that's what creates life-changing footballers, not just good ones.</p>
           </div>
-
-          <div class="card">
-            <div class="card__icon" aria-hidden="true"><i class="fa-solid fa-arrow-trend-up"></i></div>
-            <h3 class="card__title">Create Pathways</h3>
-            <p class="card__text">
-              We actively create and maintain clear progression routes for our players through the
-              JPL structure, including county representative squads and beyond.
-              Your journey starts here.
-            </p>
+          <div style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-xl); padding: var(--space-10); text-align: center;">
+            <div style="font-size: 2.5rem; margin-bottom: var(--space-5);"><i class="fa-solid fa-globe" style="color: var(--color-teal);"></i></div>
+            <h3 style="font-size: var(--font-size-xl); font-weight: 800; color: #fff; margin-bottom: var(--space-4);">Life-Changing Opportunities</h3>
+            <p style="color: rgba(255,255,255,0.65); line-height: 1.7;">From competing in the Mid Cup in Spain to touring the Netherlands, and representing Mid Somerset on the international stage, we open doors that most academies never could, giving every player experiences that go far beyond the pitch.</p>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ===================== COACHING STAFF ===================== -->
-    <section class="section" id="staff">
-      <div class="container">
-        <div class="text-center">
-          <span class="section-label">The People Behind the Club</span>
-          <h2 class="section-title gradient-text">Coaching Staff</h2>
-          <p class="section-subtitle">
-            Our coaches are passionate about developing the next generation of Somerset footballers
-            through the Junior Premier League pathway.
-          </p>
-        </div>
-
-        <div class="grid-3">
-
-          <div class="coach-card">
-            <div class="coach-card__avatar" aria-hidden="true"><i class="fa-solid fa-whistle" style="font-size:2rem;"></i></div>
-            <h3 class="coach-card__name">Head Coach</h3>
-            <div class="coach-card__role">Boys Programme</div>
-            <p class="coach-card__bio">
-              Our head coach oversees the Boys programme from U7 to U13, delivering a structured
-              JPL curriculum that challenges every player to reach their potential, week on week.
-            </p>
-          </div>
-
-          <div class="coach-card">
-            <div class="coach-card__avatar" aria-hidden="true"><i class="fa-solid fa-futbol" style="font-size:2rem;"></i></div>
-            <h3 class="coach-card__name">Girls Head Coach</h3>
-            <div class="coach-card__role">Girls Centre of Excellence</div>
-            <p class="coach-card__bio">
-              Leading our Girls Centre of Excellence across U8–U15, our girls head coach provides
-              a specialist, high-quality JPL development environment for female players in Somerset.
-            </p>
-          </div>
-
-          <div class="coach-card">
-            <div class="coach-card__avatar" aria-hidden="true"><i class="fa-solid fa-hands" style="font-size:2rem;"></i></div>
-            <h3 class="coach-card__name">Goalkeeper Coach</h3>
-            <div class="coach-card__role">All Venues · All Age Groups</div>
-            <p class="coach-card__bio">
-              Dedicated specialist goalkeeper coaching available at all three training venues.
-              Our goalkeeper coach works with shot-stoppers across all age groups in both the
-              Boys and Girls programmes.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== TRAINING VENUES ===================== -->
-    <section class="locations-section" id="venues" aria-label="Training Venues" style="clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%); margin-top:-2px; padding-top: calc(var(--space-20) + 3vw); padding-bottom: calc(var(--space-20) + 3vw);">
-      <div class="container">
-        <div class="text-center">
-          <span class="section-label" style="color:#93c5fd;">Where We Train</span>
-          <h2 class="section-title" style="color:#fff;">Our Three Venues</h2>
-          <p class="section-subtitle" style="color:rgba(255,255,255,0.65);">
-            Convenient locations across Somerset making quality JPL training accessible to as many players as possible.
-          </p>
-        </div>
-
-        <div class="locations-grid">
-
-          <div class="location-card">
-            <div class="location-card__icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="location-card__venue">Strode College Sports Centre</div>
-            <div class="location-card__town">Street, Somerset</div>
-            <div class="location-card__days"><i class="fa-regular fa-calendar"></i> Mon &amp; Fri Evenings</div>
-          </div>
-
-          <div class="location-card">
-            <div class="location-card__icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="location-card__venue">Writhlington Sports Centre</div>
-            <div class="location-card__town">Radstock, Somerset</div>
-            <div class="location-card__days"><i class="fa-regular fa-calendar"></i> Weekday Evenings</div>
-          </div>
-
-          <div class="location-card">
-            <div class="location-card__icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="location-card__venue">St Mark's School</div>
-            <div class="location-card__town">Bath, Somerset</div>
-            <div class="location-card__days"><i class="fa-regular fa-calendar"></i> Weekday Evenings</div>
-          </div>
-
-        </div>
-
-        <p style="text-align:center; color:rgba(255,255,255,0.5); font-size:var(--font-size-sm); margin-top:var(--space-8);">
-          <i class="fa-solid fa-futbol" style="color:#F59E0B; margin-right:6px;"></i>
-          Goalkeeper training available at all venues
-        </p>
-      </div>
-    </section>
-
-    <!-- ===================== CTA STRIP ===================== -->
-    <section class="cta-strip" aria-label="Join the Academy" style="margin-top:-2px;">
+    <!-- CTA -->
+    <section class="cta-strip" aria-label="Enquire for a Trial">
       <div class="container">
         <div class="cta-strip__content">
-          <span class="section-label" style="color: #93c5fd;">Get Involved</span>
-          <h2 class="cta-strip__title">Want to Be Part of It?</h2>
-          <p class="cta-strip__text">
-            Whether you are a player looking to develop your game, or a parent wanting to
-            find out more, we would love to hear from you.
-          </p>
+          <h2 class="cta-strip__title">Think Your Child Has What It Takes?</h2>
+          <p class="cta-strip__text">We'd love to find out. Apply for a trial today and take the first step toward becoming part of the Mid Somerset RTC family.</p>
           <div class="cta-strip__buttons">
-            <a href="contact.html" class="btn-primary btn-pulse">Register Your Interest</a>
-            <a href="teams.html"   class="btn-outline">View Our Teams</a>
+            <a href="trial.html" class="btn-primary btn-pulse">Enquire for a Trial</a>
+            <a href="training.html" class="btn-outline">View Training Info</a>
           </div>
         </div>
       </div>
@@ -285,36 +259,26 @@
 
   </main>
 
-  <!-- ===================== FOOTER ===================== -->
+  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <div class="footer__logo">Midsomerset <span>RTC</span></div>
-          <div class="footer__tagline">Somerset's No.1 JPL Football Academy</div>
-          <p class="footer__desc">
-            Mid-Somerset JPL Talent Centre — part of the Junior Premier League pathway.
-            Boys U7–U13 &amp; Girls U8–U15 across Bath, Radstock, and Street.
-          </p>
-          <div style="margin-top:var(--space-5);">
-            <a href="https://instagram.com/midsomersetrtc" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:var(--space-2); color:rgba(255,255,255,0.6); font-size:var(--font-size-sm); text-decoration:none;" aria-label="Follow @midsomersetrtc on Instagram">
-              <i class="fa-brands fa-instagram" style="font-size:1.2rem;"></i>
-              @midsomersetrtc
-            </a>
-          </div>
+          <div class="footer__logo"><img src="assets/JPL_MS_RTC_Mono_White.svg" alt="Mid-Somerset RTC" class="footer__logo-img"></div>
+          <div class="footer__tagline">Somerset's Premier Football Academy</div>
+          <p class="footer__desc">Mid-Somerset RTC - part of the Junior Premier League pathway. Boys U7–U16 &amp; Girls Centre of Excellence across Bath, Radstock, and Street.</p>
         </div>
-
         <div>
           <div class="footer__nav-title">Quick Links</div>
           <ul class="footer__nav-links" role="list">
-            <li><a href="index.html"   class="footer__nav-link">Home</a></li>
-            <li><a href="about.html"   class="footer__nav-link">About</a></li>
-            <li><a href="teams.html"   class="footer__nav-link">Teams</a></li>
-            <li><a href="news.html"    class="footer__nav-link">News</a></li>
-            <li><a href="contact.html" class="footer__nav-link">Register</a></li>
+            <li><a href="index.html"     class="footer__nav-link">Home</a></li>
+            <li><a href="about.html"     class="footer__nav-link">About Us</a></li>
+            <li><a href="training.html"  class="footer__nav-link">Training Info</a></li>
+            <li><a href="successes.html" class="footer__nav-link">Successes</a></li>
+            <li><a href="girls.html"     class="footer__nav-link">Girls CoE</a></li>
+            <li><a href="trial.html"     class="footer__nav-link">Enquire for a Trial</a></li>
           </ul>
         </div>
-
         <div>
           <div class="footer__nav-title">Contact</div>
           <ul class="footer__nav-links" role="list">
@@ -324,10 +288,9 @@
           </ul>
         </div>
       </div>
-
       <div class="footer__bottom">
-        <p class="footer__copy">&copy; 2026 Mid-Somerset JPL Talent Centre. All rights reserved.</p>
-        <span class="footer__badge"><i class="fa-solid fa-trophy" style="color:#F59E0B;"></i> JPL National Champions 2018</span>
+        <p class="footer__copy">&copy; 2026 Mid-Somerset RTC. All rights reserved.</p><a href="https://www.lochsidecreative.com" target="_blank" rel="noopener" class="footer__copy" style="display:block; margin-top: var(--space-2); opacity: 0.4; font-size: var(--font-size-xs); text-decoration: none; color: inherit; transition: opacity 0.2s;">Made by Lochside Creative</a>
+        <span class="footer__badge"><i class="fa-solid fa-trophy" style="color: var(--color-gold);"></i> JPL National Champions 2018</span>
       </div>
     </div>
   </footer>

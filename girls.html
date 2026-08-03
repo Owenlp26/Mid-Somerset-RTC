@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Girls Centre of Excellence - Mid-Somerset RTC's dedicated girls football programme for U9–U16. Part of the JPL pathway in Somerset." />
+  <title>Girls Centre of Excellence - Mid-Somerset RTC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="assets/JPL_MS_RTC_Mono_White.svg" alt="Mid-Somerset RTC" class="navbar__logo-img">
+        </a>
+        <ul class="navbar__nav" role="list">
+          <li><a href="index.html"     class="navbar__link">Home</a></li>
+          <li><a href="about.html"     class="navbar__link">About</a></li>
+          <li><a href="training.html"  class="navbar__link">Training</a></li>
+          <li><a href="successes.html" class="navbar__link">Successes</a></li>
+          <li><a href="girls.html"     class="navbar__link">Girls CoE</a></li>
+          <li><a href="parents.html"   class="navbar__link">Parents</a></li>
+        </ul>
+        <div class="navbar__cta">
+          <a href="trial.html" class="btn-primary btn-sm btn-pulse">Enquire for a Trial</a>
+        </div>
+        <button class="navbar__hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="navbar__mobile-menu">
+      <a href="index.html"     class="navbar__link">Home</a>
+      <a href="about.html"     class="navbar__link">About</a>
+      <a href="training.html"  class="navbar__link">Training</a>
+      <a href="successes.html" class="navbar__link">Successes</a>
+      <a href="girls.html"     class="navbar__link">Girls CoE</a>
+      <a href="parents.html"   class="navbar__link">Parents</a>
+      <a href="trial.html" class="btn-primary">Enquire for a Trial</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" style="min-height: 480px;" aria-label="Girls Centre of Excellence">
+      <div class="page-hero__bg" style="background: linear-gradient(135deg, rgba(29,38,63,0.82) 0%, rgba(29,38,63,0.60) 100%), url('assets/images/girls-net-action.jpg') center/cover no-repeat;"></div>
+      <div class="container">
+        <div class="page-hero__content">
+          <span class="page-hero__label" style="color: var(--color-teal);">Girls Programme</span>
+          <h1 class="page-hero__title">Girls Centre of Excellence, Bath</h1>
+          <p class="page-hero__subtitle">A dedicated pathway for girls aged U9 to U16 in Bath, built to the exact same standard of coaching, facilities, and ambition as our boys' programme, because girls' football deserves nothing less.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section section--striped">
+      <div class="container">
+        <div class="section-two-col" style="display: grid; gap: var(--space-16); align-items: center;">
+          <div>
+            <span class="section-label" style="color: var(--color-teal);">About the Programme</span>
+            <h2 class="section-title gradient-text">Girls Football Done Right</h2>
+            <p class="intro-text">
+              Our Girls Centre of Excellence trains every week at St Mark's School in Bath, as part of the official Junior Premier League pathway. Girls here receive academy-level coaching, compete in the JPL, travel to international tournaments, and have genuine pathways to professional football.
+            </p>
+            <p class="intro-text" style="margin-top: var(--space-4);">
+              Whether your daughter is just starting to fall in love with football or she's ready to push herself to the next level, there's a place for her here in Bath.
+            </p>
+            <div style="margin-top: var(--space-8);">
+              <a href="trial.html" class="btn-primary btn-pulse">Enquire for a Trial</a>
+            </div>
+          </div>
+          <div style="border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 3/4; box-shadow: var(--shadow-lg); max-height: 500px;">
+            <img src="assets/images/girls-coach-talk.jpg" alt="Coach working one-on-one with girls at Mid-Somerset RTC" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section" style="clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%); padding-top: calc(var(--space-20) + 3vw); margin-top: -2px;">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-16);">
+          <span class="section-label">Why Choose Us</span>
+          <h2 class="section-title gradient-text">What Makes Our Girls Programme Different</h2>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="card__title">Official JPL Pathway</h3>
+            <p class="card__text">Our Girls Centre of Excellence in Bath is part of the Junior Premier League's official structure, meaning your daughter's development is recognised, tracked, and supported at national level.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-person-running"></i></div>
+            <h3 class="card__title">Dedicated Coaching</h3>
+            <p class="card__text">Sessions designed specifically for girls' development at each age group. Our coaches understand what it takes to help girls thrive on the pitch, and they deliver it every week.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-heart"></i></div>
+            <h3 class="card__title">Inclusive Environment</h3>
+            <p class="card__text">With our welcoming, supportive and fun environment, every girl is valued, every voice is heard, and every player is helped to grow. Beyond the football, our girls build a genuine sense of belonging, forming friendships with teammates that last far beyond their playing days and becoming part of a community that feels like family.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGE GROUPS -->
+    <section class="locations-section" style="clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%); margin-top: -2px; padding-top: calc(var(--space-20) + 3vw); padding-bottom: calc(var(--space-20) + 3vw);">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-16);">
+          <span class="section-label" style="color: var(--color-blue-label);">Age Groups</span>
+          <h2 class="section-title" style="color: #fff;">Girls U9–U16</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.65);">A programme for every stage of development.</p>
+        </div>
+
+        <!-- ANIMATED TIMELINE -->
+        <div class="girls-timeline">
+          <div class="girls-timeline__item">
+            <div class="girls-timeline__marker">
+              <span class="girls-timeline__age">U8 &amp; U9</span>
+              <div class="girls-timeline__dot"></div>
+            </div>
+            <div class="girls-timeline__card">
+              <h3 class="girls-timeline__title">Foundations</h3>
+              <p class="girls-timeline__text">Fun, foundations, and a love of the game. Introduction to skills, movement, and teamwork in a supportive environment where every session is something to look forward to.</p>
+            </div>
+          </div>
+          <div class="girls-timeline__item">
+            <div class="girls-timeline__marker">
+              <span class="girls-timeline__age">U10 &amp; U11</span>
+              <div class="girls-timeline__dot"></div>
+            </div>
+            <div class="girls-timeline__card">
+              <h3 class="girls-timeline__title">Technical Development</h3>
+              <p class="girls-timeline__text">Building technical confidence. Passing, movement, and small-sided competition begin to take shape, with each player developing their own identity on the ball.</p>
+            </div>
+          </div>
+          <div class="girls-timeline__item">
+            <div class="girls-timeline__marker">
+              <span class="girls-timeline__age">U12 &amp; U13</span>
+              <div class="girls-timeline__dot"></div>
+            </div>
+            <div class="girls-timeline__card">
+              <h3 class="girls-timeline__title">Tactical Awareness</h3>
+              <p class="girls-timeline__text">A pivotal phase. Tactical awareness, positional play, and competitive preparation. Players start representing Mid Somerset in the JPL and building real competitive experience.</p>
+            </div>
+          </div>
+          <div class="girls-timeline__item girls-timeline__item--last">
+            <div class="girls-timeline__marker">
+              <span class="girls-timeline__age">U14 &amp; U15</span>
+              <div class="girls-timeline__dot"></div>
+            </div>
+            <div class="girls-timeline__card">
+              <h3 class="girls-timeline__title">Pathway &amp; Performance</h3>
+              <p class="girls-timeline__text">Advanced development and pathway preparation. High-intensity, purposeful sessions with exposure to professional environments and international competition.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: var(--space-12); border-radius: var(--radius-xl); overflow: hidden; max-height: 420px; box-shadow: 0 16px 48px rgba(0,0,0,0.4);">
+          <img src="assets/images/girls-goalkeeper.jpg" alt="Girls goalkeeper training at Mid-Somerset RTC" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- VENUES FOR GIRLS -->
+    <section class="section section--striped" style="margin-top: -2px;">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-12);">
+          <span class="section-label">Venues</span>
+          <h2 class="section-title gradient-text">Where the Girls Programme Runs</h2>
+          <p class="section-subtitle">Girls Centre of Excellence trains every Friday at St Mark's School in Bath.</p>
+        </div>
+
+        <div style="max-width: 480px; margin: 0 auto;">
+          <div class="location-card" style="background: var(--color-white); border: 1px solid var(--color-grey-mid); text-align: center;">
+            <div class="location-card__icon" style="color: var(--color-blue);"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="location-card__venue" style="color: var(--color-navy-deep);">St Mark's School</div>
+            <div class="location-card__town" style="color: var(--color-grey-text);">Bath, Somerset</div>
+            <div class="location-card__days" style="color: var(--color-grey-text);"><i class="fa-regular fa-calendar"></i> Friday Evenings</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-strip" aria-label="Enquire for a Trial">
+      <div class="container">
+        <div class="cta-strip__content">
+          <span class="section-label" style="color: var(--color-blue-label);">Get Started</span>
+          <h2 class="cta-strip__title">Is Your Daughter Ready to Take the Next Step?</h2>
+          <p class="cta-strip__text">Apply for a trial today and we'll arrange a free session for your daughter to come, train, and see if the Mid-Somerset RTC Girls Centre of Excellence is right for her. No commitment required.</p>
+          <div class="cta-strip__buttons">
+            <a href="trial.html" class="btn-primary btn-pulse">Enquire for a Trial</a>
+            <a href="training.html" class="btn-outline">View Training Info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo"><img src="assets/JPL_MS_RTC_Mono_White.svg" alt="Mid-Somerset RTC" class="footer__logo-img"></div>
+          <div class="footer__tagline">Somerset's Premier Football Academy</div>
+          <p class="footer__desc">Mid-Somerset RTC - part of the Junior Premier League pathway. Boys U7–U16 &amp; Girls Centre of Excellence across Bath, Radstock, and Street.</p>
+        </div>
+        <div>
+          <div class="footer__nav-title">Quick Links</div>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="index.html"     class="footer__nav-link">Home</a></li>
+            <li><a href="about.html"     class="footer__nav-link">About Us</a></li>
+            <li><a href="training.html"  class="footer__nav-link">Training Info</a></li>
+            <li><a href="successes.html" class="footer__nav-link">Successes</a></li>
+            <li><a href="girls.html"     class="footer__nav-link">Girls CoE</a></li>
+            <li><a href="trial.html"     class="footer__nav-link">Enquire for a Trial</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__nav-title">Contact</div>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="mailto:midsomersetrtc@junior-premier.co.uk" class="footer__nav-link">midsomersetrtc@junior-premier.co.uk</a></li>
+            <li><span class="footer__nav-link" style="cursor: default;">Somerset, UK</span></li>
+            <li><span class="footer__nav-link" style="cursor: default;">Bath · Radstock · Street</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Mid-Somerset RTC. All rights reserved.</p><a href="https://www.lochsidecreative.com" target="_blank" rel="noopener" class="footer__copy" style="display:block; margin-top: var(--space-2); opacity: 0.4; font-size: var(--font-size-xs); text-decoration: none; color: inherit; transition: opacity 0.2s;">Made by Lochside Creative</a>
+        <span class="footer__badge"><i class="fa-solid fa-trophy" style="color: var(--color-gold);"></i> JPL National Champions 2018</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

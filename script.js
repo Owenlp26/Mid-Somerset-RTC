@@ -1,5 +1,5 @@
 /* ============================================================
-   Midsomerset RTC — script.js
+   Midsomerset RTC - script.js
    ============================================================ */
 
 (function () {
@@ -126,7 +126,7 @@
     registrationForm.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      // Basic validation — check required fields
+      // Basic validation - check required fields
       const requiredFields = registrationForm.querySelectorAll('[required]');
       let allValid = true;
 
@@ -146,7 +146,7 @@
 
       if (!allValid) return;
 
-      // Simulate submission — in production this would POST to a server
+      // Simulate submission - in production this would POST to a server
       const submitBtn = registrationForm.querySelector('[type="submit"]');
       if (submitBtn) {
         submitBtn.textContent = 'Sending…';
@@ -163,13 +163,14 @@
     });
   }
 
-  /* ── Intersection Observer — subtle card reveal ─────────── */
-  if ('IntersectionObserver' in window) {
-    const revealTargets = document.querySelectorAll(
+  /* ── Intersection Observer - subtle card reveal ─────────── */
+  if ('IntersectionObserver' in window &&
+      !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var revealTargets = document.querySelectorAll(
       '.card, .news-card, .team-card, .coach-card, .stat-box, .info-box, .offer-item, .location-card, .stat-glass'
     );
 
-    const revealObserver = new IntersectionObserver(
+    var revealObserver = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
@@ -194,7 +195,7 @@
   if ('IntersectionObserver' in window) {
 
     /**
-     * Easing function — ease out quad
+     * Easing function - ease out quad
      */
     function easeOutQuad(t) {
       return t * (2 - t);
@@ -202,8 +203,8 @@
 
     /**
      * Animate a single counter element.
-     * @param {Element} el  — element with data-count-to (number) and optional data-count-suffix
-     * @param {number} duration — ms
+     * @param {Element} el  - element with data-count-to (number) and optional data-count-suffix
+     * @param {number} duration - ms
      */
     function animateCounter(el, duration) {
       var target  = parseFloat(el.getAttribute('data-count-to')) || 0;
@@ -245,5 +246,22 @@
     document.querySelectorAll('[data-count-to]').forEach(function (el) {
       counterObserver.observe(el);
     });
+  }
+
+  // Girls timeline stagger reveal
+  var timelineItems = document.querySelectorAll('.girls-timeline__item');
+  if (timelineItems.length) {
+    var tlObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry, i) {
+        if (entry.isIntersecting) {
+          var delay = Array.prototype.indexOf.call(timelineItems, entry.target) * 120;
+          setTimeout(function () {
+            entry.target.classList.add('in-view');
+          }, delay);
+          tlObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    timelineItems.forEach(function (el) { tlObserver.observe(el); });
   }
 })();

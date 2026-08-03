@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Training information for Mid-Somerset RTC - venues, times, age groups, and what to expect at sessions across Bath, Radstock, and Street." />
+  <title>Training Information - Mid-Somerset RTC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">
+          <img src="assets/JPL_MS_RTC_Mono_White.svg" alt="Mid-Somerset RTC" class="navbar__logo-img">
+        </a>
+        <ul class="navbar__nav" role="list">
+          <li><a href="index.html"     class="navbar__link">Home</a></li>
+          <li><a href="about.html"     class="navbar__link">About</a></li>
+          <li><a href="training.html"  class="navbar__link">Training</a></li>
+          <li><a href="successes.html" class="navbar__link">Successes</a></li>
+          <li><a href="girls.html"     class="navbar__link">Girls CoE</a></li>
+          <li><a href="parents.html"   class="navbar__link">Parents</a></li>
+        </ul>
+        <div class="navbar__cta">
+          <a href="trial.html" class="btn-primary btn-sm btn-pulse">Enquire for a Trial</a>
+        </div>
+        <button class="navbar__hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="navbar__mobile-menu">
+      <a href="index.html"     class="navbar__link">Home</a>
+      <a href="about.html"     class="navbar__link">About</a>
+      <a href="training.html"  class="navbar__link">Training</a>
+      <a href="successes.html" class="navbar__link">Successes</a>
+      <a href="girls.html"     class="navbar__link">Girls CoE</a>
+      <a href="parents.html"   class="navbar__link">Parents</a>
+      <a href="trial.html" class="btn-primary">Enquire for a Trial</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Training Information">
+      <div class="page-hero__bg" style="background: linear-gradient(135deg, rgba(29,38,63,0.85) 0%, rgba(29,38,63,0.68) 100%), url('assets/images/lads-playing.jpg') center/cover no-repeat;"></div>
+      <div class="container">
+        <div class="page-hero__content">
+          <span class="page-hero__label">Training Information</span>
+          <h1 class="page-hero__title">Where, When &amp; What to Expect</h1>
+          <p class="page-hero__subtitle">Everything you need to know about training at Mid-Somerset RTC: venues, schedules, age groups, and how it all works.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section--striped">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-16);">
+          <span class="section-label">How It Works</span>
+          <h2 class="section-title gradient-text">A Programme Built Around Your Child</h2>
+          <p class="section-subtitle">Our sessions are structured, progressive, and designed to make every player better, week after week.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3 class="card__title">Structured Sessions</h3>
+            <p class="card__text">Every session follows a JPL-aligned curriculum with warm-up, technical drills, small sided games, and cool down. Age appropriate, progressive, and purposeful.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-users"></i></div>
+            <h3 class="card__title">Expert Coaching</h3>
+            <p class="card__text">Every session is led by experienced, qualified coaches who make sure each player is seen, challenged, and developed, whatever the size of the group.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3 class="card__title">Ongoing Development</h3>
+            <p class="card__text">We track progress and give clear, honest feedback. Parents are kept informed, and every player knows exactly what they're working towards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENUES & TIMES -->
+    <section class="locations-section" style="clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%); margin-top: -2px; padding-top: calc(var(--space-20) + 3vw); padding-bottom: calc(var(--space-20) + 3vw);">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-16);">
+          <span class="section-label" style="color: var(--color-blue-label);">Venues &amp; Times</span>
+          <h2 class="section-title" style="color: #fff;">Three Venues Across Somerset</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.65);">Wherever you are in Somerset, there's a venue convenient for you.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-8);">
+
+          <!-- Strode College -->
+          <div style="border-radius: var(--radius-xl); overflow: hidden; border: 1px solid rgba(255,255,255,0.15); display: grid; grid-template-columns: 1fr 1fr;">
+            <div style="aspect-ratio: 4/3; min-height: 220px;">
+              <img src="assets/images/street:strode.JPG" alt="Strode College Sports Centre, Street" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <div style="background: rgba(255,255,255,0.07); padding: var(--space-10); display: flex; flex-direction: column; justify-content: center; gap: var(--space-4);">
+              <div style="display: flex; align-items: center; gap: var(--space-3);">
+                <div style="width: 44px; height: 44px; background: rgba(3,255,255,0.15); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fa-solid fa-location-dot" style="color: var(--color-teal); font-size: 1.1rem;"></i>
+                </div>
+                <div>
+                  <div style="font-size: var(--font-size-xl); font-weight: 800; color: #fff;">Strode College Sports Centre</div>
+                  <div style="color: rgba(255,255,255,0.5); font-size: var(--font-size-sm);">Street, Somerset</div>
+                </div>
+              </div>
+              <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+                <span style="background: rgba(3,255,255,0.12); border: 1px solid rgba(3,255,255,0.25); border-radius: var(--radius-full); padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm); color: var(--color-teal); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 6px;"></i>Tuesday Evenings</span>
+                <span style="background: rgba(3,255,255,0.12); border: 1px solid rgba(3,255,255,0.25); border-radius: var(--radius-full); padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm); color: var(--color-teal); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 6px;"></i>Friday Evenings</span>
+                <span style="background: rgba(3,255,255,0.12); border: 1px solid rgba(3,255,255,0.25); border-radius: var(--radius-full); padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm); color: var(--color-teal); font-weight: 600;"><i class="fa-solid fa-users" style="margin-right: 6px;"></i>U7–U13</span>
+                <span style="background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.3); border-radius: var(--radius-full); padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm); color: #F7EA2F; font-weight: 600;"><i class="fa-solid fa-futbol" style="margin-right: 6px;"></i>GK Training Available</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Writhlington -->
+          <div style="border-radius: var(--radius-xl); overflow: hidden; border: 1px solid rgba(255,255,255,0.15); display: grid; grid-template-columns: 1fr 1fr;">
+            <div style="background: rgba(255,255,255,0.07); padding: var(--space-10); display: flex; flex-direction: column; justify-content: center; gap: var(--space-4);">
+              <div style="display: flex; align-items: center; gap: var(--space-3);">
+                <div style="width: 44px; height: 44px; background: rgba(3,255,255,0.15); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fa-solid fa-location-dot" style="color: var(--color-teal); font-size: 1.1rem;"></i>
+                </div>
+                <div>
+                  <div style="font-size: var(--font-size-xl); font-weight: 800; color: #fff;">Writhlington Sports Centre</div>
+                  <div style="color: rgba(255,255,255,0.5); font-size: var(--font-size-sm);">Radstock, Somerset</div>
+                </div>
+              </div>
+              <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+                <span style="background: rgba(3,255,255,0.12); border: 1px solid rgba(3,255,255,0.25); border-radius: var(--radius-full); padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm); color: var(--color-teal); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 6px;"></i>Monday &amp; Thursday Evenings</span>
+                <span style="background: rgba(3,255,255,0.12); border: 1px solid rgba(3,255,255,0.25); border-radius: var(--radius-full); padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm); color: var(--color-teal); font-weight: 600;"><i class="fa-solid fa-users" style="margin-right: 6px;"></i>U7–U16</span>
+                <span style="background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.3); border-radius: var(--radius-full); padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm); color: #F7EA2F; font-weight: 600;"><i class="fa-solid fa-futbol" style="margin-right: 6px;"></i>GK Training Available</span>
+              </div>
+            </div>
+            <div style="aspect-ratio: 4/3; min-height: 220px;">
+              <img src="assets/images/Radstock.JPG" alt="Writhlington Sports Centre, Radstock" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+          </div>
+
+          <!-- St Mark's Bath -->
+          <div style="border-radius: var(--radius-xl); overflow: hidden; border: 1px solid rgba(255,255,255,0.15); display: grid; grid-template-columns: 1fr 1fr;">
+            <div style="aspect-ratio: 4/3; min-height: 220px;">
+              <img src="assets/images/bath.jpg" alt="St Mark's School, Bath" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <div style="background: rgba(255,255,255,0.07); padding: var(--space-10); display: flex; flex-direction: column; justify-content: center; gap: var(--space-4);">
+              <div style="display: flex; align-items: center; gap: var(--space-3);">
+                <div style="width: 44px; height: 44px; background: rgba(3,255,255,0.15); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fa-solid fa-location-dot" style="color: var(--color-teal); font-size: 1.1rem;"></i>
+                </div>
+                <div>
+                  <div style="font-size: var(--font-size-xl); font-weight: 800; color: #fff;">St Mark's School</div>
+                  <div style="color: rgba(255,255,255,0.5); font-size: var(--font-size-sm);">Bath, Somerset</div>
+                </div>
+              </div>
+              <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+                <span style="background: rgba(3,255,255,0.12); border: 1px solid rgba(3,255,255,0.25); border-radius: var(--radius-full); padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm); color: var(--color-teal); font-weight: 600;"><i class="fa-regular fa-calendar" style="margin-right: 6px;"></i>Wednesday (Boys) &amp; Friday (Girls) Evenings</span>
+                <span style="background: rgba(3,255,255,0.12); border: 1px solid rgba(3,255,255,0.25); border-radius: var(--radius-full); padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm); color: var(--color-teal); font-weight: 600;"><i class="fa-solid fa-users" style="margin-right: 6px;"></i>Boys U7–U13 · Girls U9–U16</span>
+                <span style="background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.3); border-radius: var(--radius-full); padding: var(--space-2) var(--space-4); font-size: var(--font-size-sm); color: #F7EA2F; font-weight: 600;"><i class="fa-solid fa-futbol" style="margin-right: 6px;"></i>GK Training Available</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <style>
+          @media (max-width: 640px) {
+            .locations-section [style*="grid-template-columns: 1fr 1fr"] {
+              grid-template-columns: 1fr !important;
+            }
+            .locations-section [style*="grid-template-columns: 1fr 1fr"] > div:first-child:has(img) {
+              aspect-ratio: 16/9 !important;
+            }
+          }
+        </style>
+      </div>
+    </section>
+
+    <!-- WHAT TO EXPECT PHOTO -->
+    <section class="section section--striped" style="margin-top: var(--space-8);">
+      <div class="container">
+        <div class="section-two-col" style="display: grid; gap: var(--space-16); align-items: center;">
+          <div>
+            <span class="section-label">What to Expect</span>
+            <h2 class="section-title gradient-text">From First Session to Unlocking Your True Potential</h2>
+            <p class="intro-text">Every new player starts with a trial session so we can see how they fit and where they're at. You'll meet the coaches, see the setup, and get honest feedback either way, so your child knows exactly where they stand and what to work on next.</p>
+            <div style="margin-top: var(--space-8);">
+              <div style="display: flex; gap: var(--space-4); align-items: flex-start; margin-bottom: var(--space-6);">
+                <div style="width: 40px; height: 40px; background: var(--color-teal); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--color-navy-deep); font-weight: 800; font-size: var(--font-size-sm);">1</div>
+                <div><strong style="display: block; margin-bottom: var(--space-1);">Enquire for a Trial</strong><span style="color: var(--color-grey-text);">Fill in the form and we'll be in touch within 48 hours to arrange your trial session.</span></div>
+              </div>
+              <div style="display: flex; gap: var(--space-4); align-items: flex-start; margin-bottom: var(--space-6);">
+                <div style="width: 40px; height: 40px; background: var(--color-teal); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--color-navy-deep); font-weight: 800; font-size: var(--font-size-sm);">2</div>
+                <div><strong style="display: block; margin-bottom: var(--space-1);">Come to a Trial Session</strong><span style="color: var(--color-grey-text);">Your child trains with the group over one or more sessions to show us what they've got, just bring boots and a drink.</span></div>
+              </div>
+              <div style="display: flex; gap: var(--space-4); align-items: flex-start;">
+                <div style="width: 40px; height: 40px; background: var(--color-teal); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--color-navy-deep); font-weight: 800; font-size: var(--font-size-sm);">3</div>
+                <div><strong style="display: block; margin-bottom: var(--space-1);">Join the Academy</strong><span style="color: var(--color-grey-text);">If we're the right fit, you'll receive feedback and an offer to join. Affordable monthly sessions, no hidden costs.</span></div>
+              </div>
+            </div>
+            <div style="margin-top: var(--space-8);">
+              <a href="trial.html" class="btn-primary btn-pulse">Enquire for a Trial</a>
+            </div>
+          </div>
+          <div style="border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--shadow-lg);">
+            <img src="assets/images/player-action.jpg" alt="Player in action at training" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GK SECTION -->
+    <section class="section" style="margin-top: var(--space-8);">
+      <div class="container">
+        <div class="section-two-col" style="display: grid; gap: var(--space-16); align-items: center;">
+          <div style="border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--shadow-lg);">
+            <img src="assets/images/goalkeeper-save.jpg" alt="Goalkeeper making a save at the Juventus Academy" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" loading="lazy">
+          </div>
+          <div>
+            <span class="section-label">Goalkeepers</span>
+            <h2 class="section-title gradient-text">Specialist Goalkeeper Training</h2>
+            <p class="intro-text">Goalkeeping is one of the most specialist positions in football, yet it's often the most overlooked at grassroots level. At Mid-Somerset RTC, every goalkeeper gets dedicated training at all three venues, led by coaches who understand the unique demands of the position.</p>
+            <p style="margin-top: var(--space-4); color: var(--color-grey-text); line-height: 1.7;">Whether your child is a dedicated goalkeeper or an outfield player looking to develop between the sticks, we make sure they get the specialist attention that position deserves.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-strip" aria-label="Enquire for a Trial">
+      <div class="container">
+        <div class="cta-strip__content">
+          <h2 class="cta-strip__title">Ready to Take Your Game to the Next Level?</h2>
+          <p class="cta-strip__text">Fill in our trial enquiry form and we'll handle the rest. Come along and show us what your child has got.</p>
+          <div class="cta-strip__buttons">
+            <a href="trial.html" class="btn-primary btn-pulse">Enquire for a Trial</a>
+            <a href="about.html" class="btn-outline">About the Academy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo"><img src="assets/JPL_MS_RTC_Mono_White.svg" alt="Mid-Somerset RTC" class="footer__logo-img"></div>
+          <div class="footer__tagline">Somerset's Premier Football Academy</div>
+          <p class="footer__desc">Mid-Somerset RTC - part of the Junior Premier League pathway. Boys U7–U16 &amp; Girls Centre of Excellence across Bath, Radstock, and Street.</p>
+        </div>
+        <div>
+          <div class="footer__nav-title">Quick Links</div>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="index.html"     class="footer__nav-link">Home</a></li>
+            <li><a href="about.html"     class="footer__nav-link">About Us</a></li>
+            <li><a href="training.html"  class="footer__nav-link">Training Info</a></li>
+            <li><a href="successes.html" class="footer__nav-link">Successes</a></li>
+            <li><a href="girls.html"     class="footer__nav-link">Girls CoE</a></li>
+            <li><a href="trial.html"     class="footer__nav-link">Enquire for a Trial</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__nav-title">Contact</div>
+          <ul class="footer__nav-links" role="list">
+            <li><a href="mailto:midsomersetrtc@junior-premier.co.uk" class="footer__nav-link">midsomersetrtc@junior-premier.co.uk</a></li>
+            <li><span class="footer__nav-link" style="cursor: default;">Somerset, UK</span></li>
+            <li><span class="footer__nav-link" style="cursor: default;">Bath · Radstock · Street</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Mid-Somerset RTC. All rights reserved.</p><a href="https://www.lochsidecreative.com" target="_blank" rel="noopener" class="footer__copy" style="display:block; margin-top: var(--space-2); opacity: 0.4; font-size: var(--font-size-xs); text-decoration: none; color: inherit; transition: opacity 0.2s;">Made by Lochside Creative</a>
+        <span class="footer__badge"><i class="fa-solid fa-trophy" style="color: var(--color-gold);"></i> JPL National Champions 2018</span>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    @media (min-width: 900px) {
+      .section-two-col { grid-template-columns: 1fr 1fr !important; }
+    }
+    @media (min-width: 640px) {
+      .venue-grid { grid-template-columns: 1fr 1fr 1fr !important; }
+    }
+  </style>
+
+  <script src="script.js"></script>
+</body>
+</html>
